@@ -1,8 +1,10 @@
 ---
 templateKey: about-page
 path: /about
-title: About our values
+title: Rajesh Was here
 ---
+
+
 ![](/img/flavor_wheel.jpg)
 
 ### Shade-grown coffee
