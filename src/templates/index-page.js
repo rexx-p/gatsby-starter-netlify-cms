@@ -19,7 +19,7 @@ import '../index.css';
 
 
 const pagelocation = 'Homepage'
-export const IndexPageTemplate = ( data ) => {
+export const IndexPageTemplate = ( {data} ) => {
   return (
     <Fragment>
       <MetaTags>
@@ -30,7 +30,7 @@ export const IndexPageTemplate = ( data ) => {
         />
       </MetaTags>
       <Header />
-      <Content />
+      <Content data={data}/>
       <Footer footer={{ style: "", logo: "assets/img/logo-white.png" }} />
     </Fragment>
   );

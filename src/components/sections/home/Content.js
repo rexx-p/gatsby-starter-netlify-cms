@@ -11,11 +11,10 @@ import Team from './Team';
 import Testimonials from './Testimonials';
 import Video from './Video';
 
-class Content extends Component {
-    render() {
+const Content = ( {data} ) => {
         return (
             <Fragment>
-                <Banner/>
+                <Banner data={data}/>
                 <Abouttext/>
                 <Services/>
                 <Cta/>
@@ -28,7 +27,6 @@ class Content extends Component {
                 <Blogpost/>
             </Fragment>
         );
-    }
 }
 
 export default Content;

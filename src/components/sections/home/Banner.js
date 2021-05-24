@@ -3,8 +3,7 @@ import { Link } from "gatsby";
 import Slider from 'react-slick';
 import mainbanner from '../../../data/mainbanner.json';
 
-class Banner extends Component {
-    render() {
+const Banner = ( {data} ) => {
         const settings = {
             infinite: true,
             autoplay: true,
@@ -30,7 +29,7 @@ class Banner extends Component {
                                 <div className="row extra-left">
                                     <div className="col-lg-8">
                                         <div className="banner-text">
-                                            <h1>{item.title}</h1>
+                                            <h1>{data.heading}</h1>
                                             <p>{item.subtext}</p>
                                             <div className="btn-wrap">
                                                 <Link to="/contact" className="main-btn btn-filled">Get Started Now</Link>
@@ -47,7 +46,6 @@ class Banner extends Component {
                 <div className="banner-shape-two" />
             </section>
         );
-    }
 }
 
 export default Banner;

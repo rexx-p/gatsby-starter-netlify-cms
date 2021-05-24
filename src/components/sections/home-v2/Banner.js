@@ -15,8 +15,8 @@ class Banner extends Component {
                             <div className="col-md-6 col-12">
                                 <div className="banner-text">
                                     <a rel={'external'} href={"https://www.youtube.com/watch?v=TKnufs85hXk"} className="video-icon popup-video"><i className="fas fa-play" /></a>
-                                    <h1>We Create Perfect Brand Goods Value</h1>
-                                    <p>Bring your ideas to life with us</p>
+                                    <h1>{data.heading}</h1>
+                                    <p>{data.subheading}</p>
                                 </div>
                             </div>
                         </div>

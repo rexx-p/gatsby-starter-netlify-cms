@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Onitir - DC WebTech
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: We Create Perfect Brand Goods Value
+subheading: Bring your ideas to life with us
 mainpitch:
   title: Why Kaldi
   description: >
