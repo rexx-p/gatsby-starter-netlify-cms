@@ -1,55 +1,40 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
-
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+import React, { Component, Fragment } from 'react';
+import MetaTags from "react-meta-tags";
+import Header from '../components/layouts/Headerthree';
+import Breadcrumbs from '../components/layouts/Breadcrumbs';
+import Footer from '../components/layouts/Footer';
+import Content from '../components/sections/about/Content';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/react-circular-progressbar/dist/styles.css';
+import '../assets/css/font-awesome.min.css';
+import '../assets/css/pe-icon-7-stroke.css';
+import '../assets/css/default.css';
+import '../assets/css/style.css';
+import '../index.css';
+const pagelocation = 'About Us'
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
-
+  console.log(JSON.stringify(data));
+  const aboutPageData = data.markdownRemark.frontmatter;
   return (
-    <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
-  )
+    <Fragment>
+      <MetaTags>
+        <title>{aboutPageData.title} | {pagelocation}</title>
+        <meta
+          name="description"
+          content="#"
+        />
+      </MetaTags>
+      <Header />
+      <Breadcrumbs breadcrumb={{ pagename: pagelocation }} />
+      {/* <Content data ={aboutPageData}/> */}
+      <Footer footer={{ style: "footer-style-three", logo: "assets/img/logo.png" }} />
+    </Fragment>
+  );
 }
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
-
-export default AboutPage
+export default AboutPage;
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
