@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "image": "assets/img/brand/01.png",
+        "companyname": "Lorem Ipsum"
+    },
+    {
+        "id": 2,
+        "image": "assets/img/brand/02.png",
+        "companyname": "Lorem Ipsum"
+    },
+    {
+        "id": 3,
+        "image": "assets/img/brand/03.png",
+        "companyname": "Lorem Ipsum"
+    },
+    {
+        "id": 4,
+        "image": "assets/img/brand/04.png",
+        "companyname": "Lorem Ipsum"
+    },
+    {
+        "id": 5,
+        "image": "assets/img/brand/05.png",
+        "companyname": "Lorem Ipsum"
+    }
+]

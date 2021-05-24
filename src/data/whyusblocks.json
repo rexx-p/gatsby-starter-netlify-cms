@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "extclass": "",
+        "icon": "fas fa-paper-plane",
+        "title": "Our Mission",
+        "text": "Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor"
+    },
+    {
+        "id": 2,
+        "extclass": "mt-30",
+        "icon": "fas fa-globe",
+        "title": "Our Vision",
+        "text": "Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor"
+    },
+    {
+        "id": 3,
+        "extclass": "mt-30",
+        "icon": "fas fa-users",
+        "title": "Our Approch",
+        "text": "Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor"
+    },
+    {
+        "id": 4,
+        "extclass": "mt-30",
+        "icon": "fas fa-cogs",
+        "title": "Our Strategy",
+        "text": "Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor"
+    }
+]

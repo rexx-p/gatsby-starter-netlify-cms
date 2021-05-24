@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "fab fa-python",
+        "title": "Python",
+        "content": "Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well."
+    },
+    {
+        "id": 2,
+        "icon": "fab fa-wordpress",
+        "title": "Wordpress",
+        "content": "Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well."
+    },
+    {
+        "id": 3,
+        "icon": "fab fa-html5",
+        "title": "HTML5",
+        "content": "Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well."
+    },
+    {
+        "id": 4,
+        "icon": "fab fa-java",
+        "title": "JAVA",
+        "content": "Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well."
+    }
+]

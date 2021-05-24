@@ -1,0 +1,81 @@
+/*===========================
+    FRAMEWORK 
+===========================*/
+.framework-section {
+	background-color: $secondary-color;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	&.padding-bottom-extra {
+		padding-bottom: 270px;
+	}
+	.framework-text {
+		@media #{$md} {
+			margin-top: 50px;
+		}
+		@media #{$sm} {
+			padding-left: 0;
+			margin-top: 50px;
+		}
+		&,
+		.section-title h2,
+		a {
+			color: $white;
+		}
+		.framework-list {
+			li {
+				margin-right: 25px;
+				@media #{$lg} {
+					margin-right: 15px;
+				}
+				@media #{$xsm} {
+					margin-right: 10px;
+					font-size: 14px;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					text-align: center;
+					font-weight: 700;
+					padding: 0;
+					border-radius: 0;
+					span.icon {
+						display: block;
+						height: 100px;
+						width: 100px;
+						line-height: 100px;
+						background-color: #072341;
+						color: $primary-color;
+						font-size: 40px;
+						margin-bottom: 15px;
+						@include transition(0.3s);
+						@media #{$lg} {
+							height: 80px;
+							width: 80px;
+							line-height: 80px;
+						}
+						@media #{$xsm} {
+							height: 80px;
+							width: 80px;
+							line-height: 80px;
+						}
+						@media #{$tiny} {
+							height: 60px;
+							width: 60px;
+							line-height: 60px;
+							font-size: 25px;
+						}
+					}
+					&:hover,
+					&.active {
+						background-color: transparent;
+						span.icon {
+							background-color: $primary-color;
+							color: #072341;
+						}
+					}
+				}
+			}
+		}
+	}
+}

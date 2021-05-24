@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Onitir IT solution template
+    Template URI: https://Slidesigma.biz/onitir
+    Author: Slidesigma
+    Author URI: https://www.Slidesigma.com
+    Version: 1.0
+
+    Note: This is Main Style Scss File. 
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    01. Common
+    02. Header
+    03. Banner
+    04. About
+    05. Services
+    06. Call to action
+    07. Features Boxes
+    08. Video
+    09. Team
+    10. Skill
+    11. Portfolio
+    12. Testimonial
+    13. Blog
+    14. Contact
+    15. Framework
+    16. Counter
+    17. Breadcrumb
+    18. Sidebar
+    19. Faq
+    20. Footer
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'services';
+@import 'cta';
+@import 'features';
+@import 'video';
+@import 'team';
+@import 'skill';
+@import 'portfolio';
+@import 'testimonial';
+@import 'blog';
+@import 'contact';
+@import 'framework';
+@import 'counter';
+@import 'breadcrumb';
+@import 'sidebar';
+@import 'faq';
+@import 'footer';

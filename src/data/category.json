@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Custom Software Development",
+        "img": "assets/img/services/img-01.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Outsoursing Development",
+        "img": "assets/img/services/img-02.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Software Product Development",
+        "img": "assets/img/services/img-03.jpg"
+    }
+]

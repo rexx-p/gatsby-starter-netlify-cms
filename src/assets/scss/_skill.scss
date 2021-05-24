@@ -1,0 +1,66 @@
+/*===========================
+    Skill
+===========================*/
+.skills-section {
+	position: relative;
+	background-color: $section-bg;
+	.hire-btn {
+		position: absolute;
+		left: 50%;
+		top: -30px;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+	.skill-progress {
+		.title {
+			font-weight: 700;
+			text-transform: uppercase;
+			font-family: $oswald;
+			margin-bottom: 25px;
+		}
+		.progressbar-wrap {
+			background-color: #eaf2f8;
+			height: 5px;
+			width: 100%;
+			position: relative;
+			.progressbar {
+				height: 16px;
+				background-color: $primary-color;
+				transition: width 2s ease-in-out;
+				width: 0;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.skill-img {
+		position: relative;
+		z-index: 1;
+		@media #{$md} {
+			margin-top: 60px;
+		}
+		@media #{$sm} {
+			margin-top: 60px;
+		}
+		&::after {
+			position: absolute;
+			right: -25px;
+			bottom: -25px;
+			width: 180px;
+			height: 180px;
+			background-color: $primary-color;
+			content: '';
+			clip-path: polygon(100% 0, 0 100%, 100% 100%);
+			z-index: -1;
+			@media #{$xsm} {
+				right: -15px;
+				bottom: -15px;
+			}
+		}
+	}
+	.bg-transparent {
+		background-color: transparent;
+	}
+}

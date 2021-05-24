@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "linkText": "Home",
+        "child": true,
+        "submenu": [
+            {
+                "id": 1.1,
+                "link": "/",
+                "linkText": "Home One"
+            },
+            {
+                "id": 1.2,
+                "link": "/home-v2",
+                "linkText": "Home Two"
+            },
+            {
+                "id": 1.3,
+                "link": "/home-v3",
+                "linkText": "Home three"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "linkText": "About",
+        "link": "/about"
+    },
+    {
+        "id": 3,
+        "linkText": "Services",
+        "child": true,
+        "submenu": [
+            {
+                "id": 3.1,
+                "link": "/services",
+                "linkText": "Services"
+            },
+            {
+                "id": 3.2,
+                "link": "/service-details",
+                "linkText": "Service Details"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "linkText": "Pages",
+        "child": true,
+        "submenu": [
+            {
+                "id": 4.1,
+                "link": "/whyus",
+                "linkText": "Why Choose Us"
+            },
+            {
+                "id": 4.2,
+                "linkText": "Team",
+                "child": true,
+                "submenu": [
+                    {
+                        "id": 4.21,
+                        "link": "/team",
+                        "linkText": "Team"
+                    },
+                    {
+                        "id": 4.22,
+                        "link": "/team-details/1",
+                        "linkText": "Team Details"
+                    }
+                ]
+            },
+            {
+                "id": 4.3,
+                "linkText": "Portfolio",
+                "child": true,
+                "submenu": [
+                    {
+                        "id": 4.31,
+                        "link": "/portfolio-grid",
+                        "linkText": "Portfolio Grid"
+                    },
+                    {
+                        "id": 4.32,
+                        "link": "/portfolio-slider",
+                        "linkText": "Portfolio Slider"
+                    },
+                    {
+                        "id": 4.33,
+                        "link": "/portfolio-masonry",
+                        "linkText": "Portfolio Masonry"
+                    },
+                    {
+                        "id": 4.34,
+                        "link": "/portfolio-details/1",
+                        "linkText": "Portfolio Details"
+                    }
+                ]
+            },
+            {
+                "id": 4.4,
+                "linkText": "News",
+                "child": true,
+                "submenu": [
+                    {
+                        "id": 4.41,
+                        "link": "/blog-standard",
+                        "linkText": "News Standard"
+                    },
+                    {
+                        "id": 4.42,
+                        "link": "/blog-grid",
+                        "linkText": "News Grid"
+                    },
+                    {
+                        "id": 4.43,
+                        "link": "/blog-details/1",
+                        "linkText": "News Details"
+                    }
+                ]
+            },
+            {
+                "id": 4.5,
+                "link": "/faqs",
+                "linkText": "FAQ's"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "linkText": "News",
+        "child": true,
+        "submenu": [
+            {
+                "id": 5.1,
+                "link": "/blog-standard",
+                "linkText": "News Standard"
+            },
+            {
+                "id": 5.2,
+                "link": "/blog-grid",
+                "linkText": "News Grid"
+            },
+            {
+                "id": 5.3,
+                "link": "/blog-details/1",
+                "linkText": "News Details"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "linkText": "Contact",
+        "link": "/contact"
+    }
+]

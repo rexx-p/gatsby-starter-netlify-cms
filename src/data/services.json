@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "icon": "pe-7s-diamond",
+        "title": "IT Design",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 2,
+        "icon": "pe-7s-arc",
+        "title": "IT management",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 3,
+        "icon": "pe-7s-refresh-2",
+        "title": "IT Security",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 4,
+        "icon": "pe-7s-world",
+        "title": "Data Security",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 5,
+        "icon": "pe-7s-target",
+        "title": "Business Reform",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 6,
+        "icon": "pe-7s-science",
+        "title": "Firewall advance",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 7,
+        "icon": "pe-7s-joy",
+        "title": "Game develop",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    },
+    {
+        "id": 8,
+        "icon": "pe-7s-help2",
+        "title": "IT Support",
+        "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid."
+    }
+]

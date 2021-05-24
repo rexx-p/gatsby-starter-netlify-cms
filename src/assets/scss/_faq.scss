@@ -1,0 +1,86 @@
+/*===========================
+    FAQ
+===========================*/
+.faq-loop {
+	background-color: $section-bg;
+	padding: 60px;
+	@media #{$lsm} {
+		padding: 30px;
+	}
+	@media #{$xsm} {
+		padding: 15px;
+	}
+	@media #{$tiny} {
+		padding: 10px;
+	}
+	.card {
+		border: 0;
+		border-radius: 0;
+		background-color: $white;
+		margin-bottom: 10px;
+		.card-header {
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			button {
+				border: none;
+				padding: 20px 35px;
+				width: 100%;
+				text-align: left;
+				background-color: transparent;
+				font-size: 18px;
+				font-weight: 700;
+				font-family: $oswald;
+				text-transform: uppercase;
+				color: $text-color;
+				position: relative;
+				min-height: 70px;
+				@media #{$lg} {
+					font-size: 16px;
+					padding: 20px;
+				}
+				@media #{$sm} {
+					font-size: 15px;
+					padding: 20px 70px 20px 20px;
+				}
+				@media #{$tiny} {
+					padding-right: 50px;
+				}
+				.icon {
+					position: absolute;
+					right: 10px;
+					top: 50%;
+					width: 50px;
+					background-color: $primary-color;
+					text-align: center;
+					font-size: 24px;
+					color: $text-color;
+					line-height: 50px;
+					height: 50px;
+					@include transition(0.3s);
+					transform: translateY(-50%);
+					@media #{$tiny} {
+						height: 40px;
+						width: 40px;
+						line-height: 40px;
+						right: 5px;
+					}
+				}
+				&.active-accordion {
+					.icon span {
+						transform: rotate(45deg);
+					}
+				}
+			}
+		}
+		.card-body {
+			padding: 0 35px 25px;
+			@media #{$lg} {
+				padding: 0 20px 25px;
+			}
+			@media #{$sm} {
+				padding: 0 20px 25px;
+			}
+		}
+	}
+}

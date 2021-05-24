@@ -1,0 +1,377 @@
+/*===========================
+    Banner
+===========================*/
+.banner-section {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding-top: 330px;
+	padding-bottom: 160px;
+	z-index: 1;
+	@media #{$sm} {
+		padding-top: 300px;
+		padding-bottom: 120px;
+	}
+	@media #{$xsm} {
+		padding-top: 240px;
+		padding-bottom: 100px;
+	}
+	@media #{$tiny} {
+		padding-top: 200px;
+		padding-bottom: 100px;
+	}
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $overly-color;
+		content: '';
+		opacity: 0.6;
+		z-index: -3;
+	}
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: url(../img/banner/line.png);
+		z-index: -2;
+	}
+
+	/* Banner Shape */
+	.banner-shape-one {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 625px;
+		height: 685px;
+		background-color: $primary-color;
+		opacity: 0.6;
+		z-index: -2;
+		clip-path: polygon(100% 0%, 100% 62%, 62% 100%, 0% 100%);
+		@media #{$md} {
+			height: 320px;
+			width: 320px;
+		}
+		@media #{$sm} {
+			height: 320px;
+			width: 320px;
+		}
+		@media #{$tiny} {
+			height: 220px;
+			width: 220px;
+		}
+	}
+	.banner-shape-two {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 240px;
+		height: 260px;
+		background-color: $secondary-color;
+		opacity: 0.6;
+		z-index: -1;
+		clip-path: polygon(100% 0%, 0 100%, 100% 100%);
+		@media #{$md} {
+			height: 120px;
+			width: 120px;
+		}
+		@media #{$sm} {
+			height: 120px;
+			width: 120px;
+		}
+		@media #{$sm} {
+			height: 82px;
+			width: 82px;
+		}
+	}
+	.banner-shape-three {
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		width: 100%;
+		height: 225px;
+		background-color: transparent;
+		svg {
+			width: calc(125% + 1.3px);
+			height: 225px;
+			display: block;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			path {
+				fill: #ffffff;
+				transform-origin: center;
+				transform: rotateY(0deg);
+			}
+		}
+	}
+
+	/* Banner Content */
+	.single-banner {
+		.row.extra-left {
+			@media #{$xxl} {
+				margin-left: -90px;
+			}
+		}
+		.banner-text {
+			&,
+			h1 {
+				color: $white;
+			}
+			h1 {
+				font-size: 110px;
+				text-transform: uppercase;
+				line-height: 1.09;
+				margin-bottom: 45px;
+				@media #{$lg} {
+					font-size: 90px;
+				}
+				@media #{$md} {
+					font-size: 75px;
+				}
+				@media #{$lsm} {
+					font-size: 52px;
+				}
+				@media #{$xsm} {
+					font-size: 40px;
+				}
+				@media #{$tiny} {
+					font-size: 32px;
+				}
+			}
+			p {
+				position: relative;
+				font-size: 24px;
+				font-weight: 500;
+				padding: 5px 0 5px 25px;
+				@media #{$tiny} {
+					font-size: 18px;
+				}
+				&::before {
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 100%;
+					content: '';
+					background-color: $primary-color;
+					width: 4px;
+				}
+			}
+			.btn-wrap {
+				margin-top: 40px;
+				a.main-btn {
+					margin-right: 20px;
+					&.btn-borderd {
+						color: $white;
+						border-color: rgba(255, 255, 255, 0.2);
+						&:hover {
+							color: $secondary-color;
+							border-color: $primary-color;
+						}
+					}
+					&.btn-filled:hover {
+						border-color: rgba(255, 255, 255, 0.2);
+						color: $white;
+						&::after,
+						&::before {
+							background-color: rgba(255, 255, 255, 0.2);
+						}
+					}
+					@media #{$xsm} {
+						margin-right: 10px;
+						padding: 0 30px;
+					}
+					@media #{$tiny} {
+						margin-bottom: 10px;
+						padding: 0 45px;
+					}
+				}
+			}
+		}
+	}
+
+	/* Banner Style Two */
+	&.banner-style-two {
+		padding: 0;
+		&::after,
+		&::before {
+			display: none;
+		}
+		.single-banner {
+			height: 930px;
+			display: flex;
+			align-items: center;
+			@media #{$lg} {
+				height: 720px;
+			}
+			@media #{$md} {
+				height: 620px;
+			}
+			@media #{$lsm} {
+				height: 600px;
+			}
+			@media #{$xsm} {
+				height: 500px;
+			}
+			.banner-img {
+				@media #{$sm} {
+					display: none;
+				}
+			}
+			.banner-text {
+				&,
+				p,
+				h1 {
+					color: $secondary-color;
+				}
+				h1 {
+					font-size: 100px;
+					@media #{$xl} {
+						font-size: 80px;
+					}
+					@media #{$lg} {
+						font-size: 60px;
+					}
+					@media #{$md} {
+						font-size: 50px;
+					}
+					@media #{$lsm} {
+						font-size: 55px;
+					}
+					@media #{$xsm} {
+						font-size: 40px;
+					}
+					@media #{$tiny} {
+						font-size: 30px;
+					}
+				}
+				.video-icon {
+					color: $secondary-color;
+					height: 70px;
+					width: 70px;
+					text-align: center;
+					line-height: 70px;
+					background-color: $primary-color;
+					position: relative;
+					margin-bottom: 40px;
+					&::after {
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						width: 100%;
+						content: '';
+						background-color: $primary-color;
+						z-index: -1;
+						animation: ripple-white 1s linear infinite;
+					}
+				}
+			}
+		}
+	}
+
+	/* Banner Style Three */
+	&.banner-style-three {
+		padding-top: 250px;
+		padding-bottom: 290px;
+		@media #{$md} {
+			padding-top: 220px;
+			padding-bottom: 250px;
+		}
+		@media #{$sm} {
+			padding-top: 200px;
+			padding-bottom: 220px;
+		}
+		&::before {
+			display: none;
+		}
+		.single-banner {
+			.banner-text {
+				text-align: center;
+				h1 {
+					font-weight: 200;
+					letter-spacing: -1px;
+					@media #{$tiny} {
+						font-size: 38px;
+					}
+					span {
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+
+	/* Slider nav And dots */
+	.slider-active {
+		.slick-dots {
+			position: absolute;
+			left: 50%;
+			bottom: -130px;
+			transform: translateX(-50%);
+			@media #{$sm} {
+				bottom: -100px;
+			}
+			@media #{$xsm} {
+				bottom: -90px;
+			}
+			li {
+				display: inline-block;
+				margin: 0 4px;
+				button {
+					font-size: 0;
+					height: 15px;
+					width: 15px;
+					border: navajowhite;
+					border-radius: 50%;
+					background: white;
+				}
+				&.slick-active {
+					button {
+						background-color: $primary-color;
+					}
+				}
+			}
+		}
+		.slick-arrow {
+			position: absolute;
+			left: 4%;
+			top: 50%;
+			transform: translateY(-50%);
+			font-weight: 700;
+			font-size: 20px;
+			color: white;
+			cursor: pointer;
+			text-transform: uppercase;
+			font-family: $oswald;
+			z-index: 2;
+			@media #{$lg} {
+				left: 2%;
+			}
+			@media #{$md} {
+				left: 1%;
+			}
+			i {
+				margin-right: 10px;
+			}
+			&.next-arrow {
+				left: auto;
+				right: 4%;
+				i {
+					margin-right: 0;
+					margin-left: 10px;
+				}
+				@media #{$lg} {
+					left: auto;
+					right: 2%;
+				}
+				@media #{$md} {
+					left: auto;
+					right: 1%;
+				}
+			}
+		}
+	}
+}
