@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Onitir - DC WebTech
 image: /img/home-jumbotron.jpg
-heading: We Create Perfect Brand Good Values
+heading: We Create Perfect Brand Good Behaviour
 subheading: Bring your ideas to life with us
 mainpitch:
   title: Why Kaldi
