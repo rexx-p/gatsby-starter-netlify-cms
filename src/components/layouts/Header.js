@@ -8,6 +8,7 @@ import Mobilemenu from './Mobilemenu';
 
 class Header extends HeaderComponent {
     render() {
+        console.log(JSON.stringify(this.props.data.logo))
         const stickyheader = this.state.isTop ? 'sticky' : '';
         return (
             <header className={"header-absolute sticky-header " + stickyheader} id="can-sticky">
@@ -35,7 +36,7 @@ class Header extends HeaderComponent {
                         <div className="d-flex align-items-center justify-content-between">
                             <nav className="main-menu">
                                 <div className="logo">
-                                    <Link to="/"><img src={"/assets/img/logo.png"} alt="logo" /></Link>
+                                    <Link to="/"><img src={this.props.data.logo} alt="logo" /></Link>
                                 </div>
                                 <div className="menu-items">
                                     <ul>

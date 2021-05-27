@@ -29,7 +29,7 @@ export const IndexPageTemplate = ( {data} ) => {
           content="#"
         />
       </MetaTags>
-      <Header />
+      <Header data={data}/>
       <Content data={data}/>
       <Footer footer={{ style: "", logo: "assets/img/logo-white.png" }} />
     </Fragment>
