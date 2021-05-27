@@ -20,8 +20,10 @@ const Banner = ( {data} ) => {
                 },
             ]
         }
+        const bannerSrc = data.banner && data.banner.childImageSharp ? data.banner.childImageSharp.fluid.src : data.banner;
+    
         return (
-            <section className="banner-section" style={{ backgroundImage: "url(/assets/img/banner/01.jpg)" }}>
+            <section className="banner-section" style={{ backgroundImage: `url(${bannerSrc})` }}>
                 <Slider {...settings} className="slider-active" id="bannerSliderOne">
                     {mainbanner.map((item, i) => (
                         <div className="single-banner" key={i}>
