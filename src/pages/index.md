@@ -1,8 +1,7 @@
 ---
 templateKey: index-page
 title: Onitir - DC WebTech
-image: /img/home-jumbotron.jpg
-logo: /img/logo.png
+logo: /img/apple-touch-icon.png
 heading: We Create Perfect Brand Good Behaviour
 subheading: Bring your ideas to life with us
 mainpitch:
@@ -67,4 +66,5 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+image: /img/home-jumbotron.jpg
 ---
