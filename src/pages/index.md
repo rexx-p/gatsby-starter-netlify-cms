@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Onitir - DC WebTech
-logo: /img/apple-touch-icon.png
+logo: https://source.unsplash.com/random
 heading: We Create Perfect Brand Good Behaviour
 subheading: Bring your ideas to life with us
 mainpitch:
