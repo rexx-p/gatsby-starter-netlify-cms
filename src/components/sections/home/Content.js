@@ -19,12 +19,12 @@ const Content = ( {data} ) => {
                 <Services/>
                 <Cta/>
                 <Features/>
-                <Video/>
+                {/* <Video/> */}
                 {/* <Team/> */}
                 <Skills/>
-                <Portfolio/>
-                <Testimonials/>
-                <Blogpost/>
+                {/* <Portfolio/>
+                <Testimonials/> */}
+                {/* <Blogpost/> */}
             </Fragment>
         );
 }
