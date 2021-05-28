@@ -5,17 +5,14 @@ logo: /img/logo.png
 banner: /img/flavor_wheel.jpg
 heading: We Create Perfect Brand Good Behaviour
 subheading: Bring your ideas to life with us
-mainpitch:
-  title: Why Kaldi
+aboutUs:
+  title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+    Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
+  widget1:
+    heading: YEARS OF EXPERIENCE
+    description: >
+      As a result, most of us need to know how to use computers. Our knowledge of computers.  
 intro:
   blurbs:
     - image: /img/coffee.png

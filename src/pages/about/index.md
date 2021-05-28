@@ -12,7 +12,7 @@ description: >
 extra: >
      Over the years, a wide range of develop ments and innovations in the global IT arena have
      led to many new IT-enabled devices and services being produced.    
-mainpitch:
+aboutUs:
   title: Why Kaldi
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee

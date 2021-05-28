@@ -32,7 +32,7 @@ const Banner = ( {data} ) => {
                                     <div className="col-lg-8">
                                         <div className="banner-text">
                                             <h1>{data.heading}</h1>
-                                            <p>{item.subtext}</p>
+                                            <p>{data.subheading}</p>
                                             <div className="btn-wrap">
                                                 <Link to="/contact" className="main-btn btn-filled">Get Started Now</Link>
                                                 <Link to="/about" className="main-btn btn-borderd">Learn More</Link>

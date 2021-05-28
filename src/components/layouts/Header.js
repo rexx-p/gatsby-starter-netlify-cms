@@ -8,7 +8,6 @@ import Mobilemenu from './Mobilemenu';
 
 class Header extends HeaderComponent {
     render() {
-        console.log(JSON.stringify(this.props.data.logo.child))
         const imageSrc = this.props.data.logo.childImageSharp ? this.props.data.logo.childImageSharp.fluid.src : this.props.data.logo;
 
         const stickyheader = this.state.isTop ? 'sticky' : '';
