@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby";
 
-const Content = ( {data} ) => {
-
-
-    const quoteImageSrc = data.quoteImage && data.quoteImage.childImageSharp ? data.quoteImage.childImageSharp.fluid.src : data.quoteImage;
+const Services = () => {
         return (
             <section className="services-secton pt-120 pb-200">
                 <div className="container">
@@ -39,7 +36,7 @@ const Content = ( {data} ) => {
                             <div className="col-lg-4 col-md-6 col-sm-10">
                                 <div className="single-service text-center primary-bg mt-120">
                                     <div className="icon">
-                                        <img src={quoteImageSrc} alt="icon" />
+                                        <img src={"/assets/img/services/icon-3.png"} alt="icon" />
                                     </div>
                                     <h4>Maintainance &amp; Data sent</h4>
                                     <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor

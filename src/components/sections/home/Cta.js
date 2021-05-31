@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby";
 
-class Cta extends Component {
-    render() {
+const Cta = ( {data} ) => {
+
+    const quoteImageSrc = data.quoteImage && data.quoteImage.childImageSharp ? data.quoteImage.childImageSharp.fluid.src : data.quoteImage;
+
         return (
             <section className="call-to-action">
                 <div className="container">
                     <div className="cta-inner">
                         <div className="cat-img">
-                            <img src={"/assets/img/cta/cta-img.png"} alt="img" />
+                            <img src={quoteImageSrc} alt="img" />
                         </div>
                         <div className="cta-text">
                             <div className="row align-items-end">
@@ -25,7 +27,6 @@ class Cta extends Component {
                 </div>
             </section>
         );
-    }
 }
 
 export default Cta;
