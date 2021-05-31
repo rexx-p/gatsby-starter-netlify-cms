@@ -27,5 +27,5 @@ projects:
   description: >
     As a result, most of us need to know how to use computers. Our knowledge of
     computers.
-quoteImage: /img/tile-gallery/02.jpg
+quoteImage: /img/services/icon-3.png
 ---
