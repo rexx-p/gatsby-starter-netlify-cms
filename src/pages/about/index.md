@@ -1,5 +1,5 @@
 ---
-templateKey: about-us-page
+templateKey: about-page
 title: Onitir - DC WebTech
 logo: /img/logo.png
 banner: /img/flavor_wheel.jpg
