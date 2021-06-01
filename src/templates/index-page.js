@@ -45,7 +45,6 @@ const IndexPage = ({ data }) => {
       subheading={frontmatter.subheading}
       aboutUs={frontmatter.aboutUs}
       description={frontmatter.description}
-      intro={frontmatter.intro}
     />
   )
 }
@@ -100,20 +99,6 @@ export const pageQuery = graphql`
           description
         }
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }
