@@ -1,19 +1,33 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import  WhyUsPageTemplate  from '../../templates/why-us-page'
+import  IndexPageTemplate  from '../../templates/why-us-page'
 
-const WhyUsPagePreview = ({ entry, widgetFor }) => (
-  <WhyUsPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
-)
+const IndexPagePreview = ({ entry, getAsset }) => {
+  const data = entry.getIn(['data']).toJS()
 
-WhyUsPagePreview.propTypes = {
+  if (data) {
+    return (
+      <IndexPageTemplate
+        data={data}
+        image={getAsset(data.image)}
+        title={data.title}
+        heading={data.heading}
+        subheading={data.subheading}
+        description={data.description}
+        intro={data.intro || { blurbs: [] }}
+        aboutUs={data.aboutUs || {}}
+      />
+    )
+  } else {
+    return <div>Loading...</div>
+  }
+}
+
+IndexPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
-  widgetFor: PropTypes.func,
+  getAsset: PropTypes.func,
 }
 
-export default WhyUsPagePreview
+export default IndexPagePreview

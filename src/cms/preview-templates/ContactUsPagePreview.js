@@ -1,19 +1,33 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import  ContactUsPageTemplate  from '../../templates/contact-us-page'
+import  IndexPageTemplate from '../../templates/contact-us-page'
 
-const ContactUsPagePreview = ({ entry, widgetFor }) => (
-  <ContactUsPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
-)
+const IndexPagePreview = ({ entry, getAsset }) => {
+  const data = entry.getIn(['data']).toJS()
 
-ContactUsPagePreview.propTypes = {
+  if (data) {
+    return (
+      <IndexPageTemplate
+        data={data}
+        image={getAsset(data.image)}
+        title={data.title}
+        heading={data.heading}
+        subheading={data.subheading}
+        description={data.description}
+        intro={data.intro || { blurbs: [] }}
+        aboutUs={data.aboutUs || {}}
+      />
+    )
+  } else {
+    return <div>Loading...</div>
+  }
+}
+
+IndexPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
-  widgetFor: PropTypes.func,
+  getAsset: PropTypes.func,
 }
 
-export default ContactUsPagePreview
+export default IndexPagePreview

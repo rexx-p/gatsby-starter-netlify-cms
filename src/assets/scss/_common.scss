@@ -1,4 +1,4 @@
-/*===========================
+ /*===========================
 	COMMON CSS 
 ===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
@@ -11,6 +11,7 @@ body {
 	overflow-x: hidden;
 	font-size: 16px;
 	line-height: 1.6;
+	border:10px solid red;
 }
 
 * {
@@ -219,7 +220,7 @@ textarea {
 		&:hover {
 			background-color: transparent;
 			border-color: rgba(4, 29, 56, 0.1);
-			&::after,
+ 			&::after,
 			&::before {
 				background-color: rgba(4, 29, 56, 0.1);
 			}
@@ -309,6 +310,12 @@ textarea {
 		@media #{$xxl} {
 			max-width: 1400px;
 		}
+	}
+}
+
+.breadcrumb-section{
+	.container{
+		position:static;
 	}
 }
 

@@ -15,8 +15,8 @@ import '../index.css';
 const pagelocation = 'About Us'
 
 const AboutPage = ({ data }) => {
-  console.log(JSON.stringify(data));
-  const aboutPageData = data.markdownRemark.frontmatter;
+  debugger;
+  const aboutPageData = data;
   return (
     <Fragment>
       <MetaTags>
@@ -37,12 +37,46 @@ const AboutPage = ({ data }) => {
 export default AboutPage;
 
 export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
+query IndexPageTemplate {
+  markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    frontmatter {
+      title
+      logo {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
       }
+      quoteImage {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+      banner {
+        childImageSharp {
+          fluid(maxWidth: 2048, quality: 100) {
+            src
+          }
+        }
+      }
+      image {
+        childImageSharp {
+          fluid(maxWidth: 2048, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      heading
+      subheading
+      aboutUs {
+        title
+        description
+      }
+      description
     }
   }
+}
 `

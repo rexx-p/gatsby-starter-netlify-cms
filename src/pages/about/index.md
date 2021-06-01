@@ -1,36 +1,33 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
-image: /img/home-jumbotron.jpg
-heading: About us
-subheading: Onitir help businesses elevate their value.
-description: >
-    Over the years, a wide range of developments and innovations in the global IT
-    arena have led to many new IT-enabled devices and services being produced. Moreover, there
-    is need for IT today, not just in urban areas but rural regions as well.
-extra: >
-     Over the years, a wide range of develop ments and innovations in the global IT arena have
-     led to many new IT-enabled devices and services being produced.
+templateKey: index-page
+title: Onitir - DC WebTech
+logo: /img/logo.png
+banner: /img/flavor_wheel.jpg
+heading: We Create Perfect Brand Good Values
+subheading: Bring your ideas to life with us
 aboutUs:
-  title: Why Kaldi
+  title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Over the years, a wide range of developments and innovations in the global
+    IT arena have led to many new IT-enabled devices and services being
+    produced. Moreover, there is need for IT today, not just in urban areas but
+    rural regions as well.
+  img1: /img/tile-gallery/03.jpg
+  img2: /img/tile-gallery/01.jpg
+  img3: /img/tile-gallery/02.jpg
+  counter1: "80"
+  counter2: "80"
+experience:
+  total: 32
+  title: YEARS OF EXPERIENCE
+  description: >
+    As a result, most of us need to know how to use computers. Our knowledge of
+    computers.
+projects:
+  total: 99
+  title: PROJECT DONE TOGETHER
+  description: >
+    As a result, most of us need to know how to use computers. Our knowledge of
+    computers.
+quoteImage: /img/cta/cta-img.png
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.

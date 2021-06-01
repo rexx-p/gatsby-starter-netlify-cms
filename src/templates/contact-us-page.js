@@ -4,6 +4,13 @@ import Header from '../components/layouts/Headerthree';
 import Breadcrumbs from '../components/layouts/Breadcrumbs';
 import Footer from '../components/layouts/Footer';
 import Content from '../components/sections/contact/Content';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/react-circular-progressbar/dist/styles.css';
+import '../assets/css/font-awesome.min.css';
+import '../assets/css/pe-icon-7-stroke.css';
+import '../assets/css/default.css';
+import '../assets/css/style.css';
+import '../index.css';
 
 const pagelocation = 'Contact Us'
 
