@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: contact-us-page
 title: Onitir - DC WebTech
 logo: /img/logo.png
 banner: /img/flavor_wheel.jpg
@@ -16,7 +16,7 @@ aboutUs:
   img2: /img/tile-gallery/01.jpg
   img3: /img/tile-gallery/02.jpg
   counter1: "80"
-  counter2: "80"
+  counter2: "80"IndexPageTemplateIndexPageTemplateIndexPageTemplate
 experience:
   total: 32
   title: YEARS OF EXPERIENCE
