@@ -12,11 +12,11 @@ import '../assets/css/pe-icon-7-stroke.css';
 import '../assets/css/default.css';
 import '../assets/css/style.css';
 import '../index.css';
-const pagelocation = 'About Us'
 
 const AboutPage = ({ data }) => {
   debugger;
   const aboutPageData = data;
+  const pagelocation = data.heading;
   return (
     <Fragment>
       <MetaTags>
@@ -26,8 +26,8 @@ const AboutPage = ({ data }) => {
           content="#"
         />
       </MetaTags>
-      <Header />
-      <Breadcrumbs breadcrumb={{ pagename: pagelocation }} />
+      <Header data={data}/>
+      <Breadcrumbs breadcrumb={{ pagename: pagelocation }} data={data}/>
       <Content data ={aboutPageData}/>
       <Footer footer={{ style: "footer-style-three", logo: "assets/img/logo.png" }} />
     </Fragment>
@@ -37,7 +37,7 @@ const AboutPage = ({ data }) => {
 export default AboutPage;
 
 export const aboutPageQuery = graphql`
-query IndexPageTemplate {
+query AboutPageTemplate {
   markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
     frontmatter {
       title

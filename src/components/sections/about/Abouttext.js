@@ -14,8 +14,8 @@ const Abouttext = ({ data }) => {
                     <div className="col-lg-6 col-md-10">
                         <div className="about-text pl-30">
                             <div className="section-title left-border mb-40">
-                                <span className="title-tag">{data.heading}</span>
-                                <h2>{data.subheading}</h2>
+                                <span className="title-tag">{data.title}</span>
+                                <h2>{data.heading}</h2>
                             </div>
                             <p>{data.description}</p>
                             <div className="about-extra">

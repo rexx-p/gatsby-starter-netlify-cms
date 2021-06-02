@@ -8,7 +8,7 @@ import Serviceblock from './Serviceblock';
 const Content = ({ data }) => {
         return (
             <Fragment>
-                <Abouttext data ={data}/>
+                <Abouttext data ={data.aboutUs}/>
                 <Serviceblock />
                 <Framework />
                 <Counter />
