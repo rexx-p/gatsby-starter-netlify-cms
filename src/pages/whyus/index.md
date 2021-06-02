@@ -6,7 +6,7 @@ banner: /img/flavor_wheel.jpg
 heading: WHY CHOOSE US
 subheading: Your Partner for Software Innovation
 aboutUs:
-  title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
+  title: OU IMPRESSIONS
   description: >
     Over the years, a wide range of developments and innovations in the global
     IT arena have led to many new IT-enabled devices and services being
