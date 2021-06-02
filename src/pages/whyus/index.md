@@ -3,10 +3,10 @@ templateKey: why-us-page
 title: Onitir - DC WebTech
 logo: /img/logo.png
 banner: /img/flavor_wheel.jpg
-heading: We Create Perfect Brand Good Values
-subheading: Bring your ideas to life with us
+heading: WHY CHOOSE US
+subheading: Your Partner for Software Innovation
 aboutUs:
-  title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
+  title: OU IMPRESSIONS
   heading: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
   description: >
     Over the years, a wide range of developments and innovations in the global
