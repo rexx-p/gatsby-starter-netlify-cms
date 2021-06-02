@@ -5,6 +5,8 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 function Abouttext({data}) {
     const [focus, setFocus] = React.useState(false);
+    const whyUsImage = data.whyUsImage && data.whyUsImage.childImageSharp ? data.whyUsImage.childImageSharp.fluid.src : data.whyUsImage;
+
     return (
         <section className="about-section">
             <div className="container">
@@ -14,7 +16,7 @@ function Abouttext({data}) {
                             <div className="about-text">
                                 <div className="section-title mb-40 left-border">
                                     <span className="title-tag">{data.aboutUs.title}</span>
-                                    <h2>{data.aboutUs.subheading}</h2>
+                                    <h2>{data.aboutUs.heading}</h2>
                                 </div>
                                 <p>{data.aboutUs.description}</p>
                                 <div className="about-features mt-50">
@@ -22,7 +24,7 @@ function Abouttext({data}) {
                                         <div className="progressbar-sec">
                                             <VisibilitySensor>
                                                 {({ isVisible }) => {
-                                                    const percentage = isVisible ? 32 : 0;
+                                                    const percentage = isVisible ? data.experience.total : 0;
                                                     return (
                                                         <CircularProgressbar className="chart"
                                                             value={percentage}
@@ -40,7 +42,7 @@ function Abouttext({data}) {
                                         </div>
                                         <div className="counter-box">
                                             <span className="timer">
-                                                <CountUp start={focus ? 0 : null} end={32} duration={5} redraw={true}>
+                                                <CountUp start={focus ? 0 : null} end={data.experience.total} duration={5} redraw={true}>
                                                     {({ countUpRef }) => (
                                                         <Fragment>
                                                             <span ref={countUpRef} />
@@ -59,16 +61,15 @@ function Abouttext({data}) {
                                             </span>
                                         </div>
                                         <div className="desc">
-                                            <h4>Years of Experience</h4>
-                                            <p>As a result, most of us need to know how to use computers. Our knowledge of
-                    computers.</p>
+                                            <h4>{data.experience.title}</h4>
+                                            <p>{data.experience.description}</p>
                                         </div>
                                     </div>
                                     <div className="sngle-features">
                                         <div className="progressbar-sec">
                                             <VisibilitySensor>
                                                 {({ isVisible }) => {
-                                                    const percentage = isVisible ? 99 : 0;
+                                                    const percentage = isVisible ? data.projects.total : 0;
                                                     return (
                                                         <CircularProgressbar className="chart"
                                                             value={percentage}
@@ -86,7 +87,7 @@ function Abouttext({data}) {
                                         </div>
                                         <div className="counter-box">
                                             <span className="timer">
-                                                <CountUp start={focus ? 0 : null} end={99} duration={5} redraw={true}>
+                                                <CountUp start={focus ? 0 : null} end={data.projects.total} duration={5} redraw={true}>
                                                     {({ countUpRef }) => (
                                                         <Fragment>
                                                             <span ref={countUpRef} />
@@ -105,9 +106,8 @@ function Abouttext({data}) {
                                             </span>
                                         </div>
                                         <div className="desc">
-                                            <h4>Project Done together</h4>
-                                            <p>As a result, most of us need to know how to use computers. Our knowledge of
-                    computers.</p>
+                                            <h4>{data.projects.title}</h4>
+                                            <p>{ data.projects.description}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@ function Abouttext({data}) {
                     </div>
                     <div className="about-man-img">
                         <div className="shape">
-                            <img src={"/assets/img/about/why_choose_us.png"} alt="img" />
+                            <img src={whyUsImage} alt="img" />
                         </div>
                     </div>
                 </div>

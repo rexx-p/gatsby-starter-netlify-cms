@@ -56,7 +56,7 @@ collections:
           - {label: AboutUs, name: aboutUs, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string},{label: Description, name: description, widget: text}, {label: Img1, name: img1, widget: image},{label: Img2, name: img2, widget: image},{label: Img3, name: img3, widget: image}]}
           - {label: Experience, name: experience, widget: object, fields: [{label: Total, name: total, widget: string},{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           - {label: Projects, name: projects, widget: object, fields: [{label: Total, name: total, widget: string},{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: QuoteImage, name: quoteImage, widget: image}
+          - {label: whyUsImage, name: whyUsImage, widget: image}
       - file: "src/pages/about/index.md"
         label: "Contact Us Page"
         name: "contact"
