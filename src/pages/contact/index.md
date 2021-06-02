@@ -16,7 +16,7 @@ aboutUs:
   img2: /img/tile-gallery/01.jpg
   img3: /img/tile-gallery/02.jpg
   counter1: "80"
-  counter2: "80"IndexPageTemplateIndexPageTemplateIndexPageTemplate
+  counter2: "80"
 experience:
   total: 32
   title: YEARS OF EXPERIENCE

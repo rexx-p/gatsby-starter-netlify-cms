@@ -39,12 +39,6 @@ const IndexPage = ({ data }) => {
   return (
     <IndexPageTemplate
       data={frontmatter}
-      image={frontmatter.image}
-      title={frontmatter.title}
-      heading={frontmatter.heading}
-      subheading={frontmatter.subheading}
-      aboutUs={frontmatter.aboutUs}
-      description={frontmatter.description}
     />
   )
 }
@@ -85,20 +79,12 @@ export const pageQuery = graphql`
             }
           }
         }
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         subheading
         aboutUs {
           title
           description
         }
-        description
       }
     }
   }

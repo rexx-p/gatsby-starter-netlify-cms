@@ -28,7 +28,7 @@ const AboutPage = ({ data }) => {
       </MetaTags>
       <Header />
       <Breadcrumbs breadcrumb={{ pagename: pagelocation }} />
-      {/* <Content data ={aboutPageData}/> */}
+      <Content data ={aboutPageData}/>
       <Footer footer={{ style: "footer-style-three", logo: "assets/img/logo.png" }} />
     </Fragment>
   );
