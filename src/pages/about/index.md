@@ -15,9 +15,9 @@ aboutUs:
     rural regions as well.
   extra: >
     Over the years, a wide range of develop ments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced.  
-  img1: /img/tile-gallery/03.jpg
-  img2: /img/tile-gallery/01.jpg
-  img3: /img/tile-gallery/02.jpg
+  img1: /img/tile-gallery/04.jpg
+  img2: /img/tile-gallery/05.jpg
+  img3: /img/experience-tag.png
   counter1: "80"
   counter2: "80"
 experience:
