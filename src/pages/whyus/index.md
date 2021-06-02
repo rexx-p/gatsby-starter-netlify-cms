@@ -1,7 +1,7 @@
 ---
 templateKey: why-us-page
 title: Onitir - DC WebTech
-logo: /img/logo.png
+logo: /img/apple-touch-icon.png
 banner: /img/flavor_wheel.jpg
 heading: We Create Perfect Brand Good Values
 subheading: Bring your ideas to life with us
