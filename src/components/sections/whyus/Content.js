@@ -5,18 +5,16 @@ import Counter from './Counter';
 import Portfolio from './Portfolio';
 import Services from './Services';
 
-class Content extends Component {
-    render() {
-        return (
-            <Fragment>
-                <Abouttext/>
-                <Counter/>
-                <Services/>
-                <Portfolio/>
-                <Blogpost/>
-            </Fragment>
-        );
-    }
+const Content = ({ data }) => {
+    return (
+        <Fragment>
+            <Abouttext data={data}/>
+            <Counter />
+            <Services />
+            <Portfolio />
+            <Blogpost />
+        </Fragment>
+    );
 }
 
 export default Content;

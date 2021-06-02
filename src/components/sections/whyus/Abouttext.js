@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
-function Abouttext(props) {
+function Abouttext({data}) {
     const [focus, setFocus] = React.useState(false);
     return (
         <section className="about-section">
@@ -13,16 +13,10 @@ function Abouttext(props) {
                         <div className="col-lg-6 col-md-10">
                             <div className="about-text">
                                 <div className="section-title mb-40 left-border">
-                                    <span className="title-tag">ou impressions</span>
-                                    <h2>Onitir help businesses elevate their value.</h2>
+                                    <span className="title-tag">{data.aboutUs.title}</span>
+                                    <h2>{data.aboutUs.subheading}</h2>
                                 </div>
-                                <p>
-                                    Over the years, a wide range of developments and innovations in the global IT arena have
-                                    led
-                                    to many new IT-enabled devices and services being produced. Moreover, there is need for
-                                    IT
-                                    today, not just in urban areas but rural regions as well.
-            </p>
+                                <p>{data.aboutUs.description}</p>
                                 <div className="about-features mt-50">
                                     <div className="sngle-features">
                                         <div className="progressbar-sec">

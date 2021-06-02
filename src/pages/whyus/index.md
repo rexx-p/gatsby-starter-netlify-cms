@@ -7,6 +7,7 @@ heading: We Create Perfect Brand Good Values
 subheading: Bring your ideas to life with us
 aboutUs:
   title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
+  heading: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
   description: >
     Over the years, a wide range of developments and innovations in the global
     IT arena have led to many new IT-enabled devices and services being

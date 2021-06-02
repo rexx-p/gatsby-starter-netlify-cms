@@ -1,14 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import MetaTags from "react-meta-tags";
-import Header from '../components/layouts/Headerthree';
+import Header from '../components/layouts/Header';
 import Breadcrumbs from '../components/layouts/Breadcrumbs';
 import Footer from '../components/layouts/Footer';
 import Content from '../components/sections/whyus/Content';
 
 const pagelocation = 'Why Choose Us'
 
-class Whyus extends Component {
-    render() {
+const Whyus = ( {data} ) => {
         return (
             <Fragment>
                 <MetaTags>
@@ -18,13 +17,49 @@ class Whyus extends Component {
                         content="#"
                     />
                 </MetaTags> 
-                <Header/>
-                <Breadcrumbs breadcrumb={{ pagename: pagelocation }} />
-                <Content/>
+                <Header data={data}/>
+                <Breadcrumbs breadcrumb={{ pagename: data.heading }} data={data}/>
+                <Content data={data}/>
                 <Footer footer={{ style:"footer-style-three", logo:"assets/img/logo.png" }}/>
             </Fragment>
         );
-    }
 }
 
 export default Whyus;
+
+export const pageQuery = graphql`
+  query WhyUsPageQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "why-us-page" } }) {
+      frontmatter {
+        title
+        logo {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+        quoteImage {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+        banner {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              src
+            }
+          }
+        }
+        heading
+        subheading
+        aboutUs {
+          title
+          description
+        }
+      }
+    }
+  }
+`

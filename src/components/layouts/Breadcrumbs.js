@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { Link } from "gatsby";
 
 class Breadcrumbs extends Component {
+    
     render() {
+        const imageSrc = this.props.data.banner.childImageSharp ? this.props.data.banner.childImageSharp.fluid.src : this.props.data.banner;
         return (
-            <section className="breadcrumb-section" style={{ backgroundImage: "url(/assets/img/breadcrumb.jpg)" }}>
+            <section className="breadcrumb-section" style={{ backgroundImage: `url(${imageSrc})` }}>
                 <div className="container">
                     <div className="breadcrumb-text">
                         <h1>{this.props.breadcrumb.pagename}</h1>
-                        <p>Your Partner for Software Innovation</p>
+                        <p>{this.props.data.subheading }</p>
                     </div>
                     <ul className="breadcrumb-nav">
                         <li><Link to="/">Home</Link></li>
