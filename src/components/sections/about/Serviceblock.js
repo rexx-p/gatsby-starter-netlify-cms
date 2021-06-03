@@ -31,7 +31,7 @@ function Serviceblock ({data}){
                                         <h4>{data[item].title}</h4>
                                         <p>{data[item].description}</p>
                                         <div className="bottom-icon">
-                                            <i className={item.icon} />
+                                            <i className={data[item].icon} />
                                         </div>
                                     </div>
                                 </div>

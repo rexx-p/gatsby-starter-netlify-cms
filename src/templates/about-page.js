@@ -92,6 +92,34 @@ query AboutPageTemplate {
           description
         }
       }
+      framework {
+				title
+        heading
+        description
+        frameworkbanner {
+        	childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+      	}
+        framework1 {
+          icon
+					title
+        }
+        framework2 {
+          icon
+					title
+        }
+        framework3 {
+          icon
+					title
+        }
+        framework4 {
+          icon
+					title
+        }
+      }
     }
   }
 }

@@ -10,7 +10,7 @@ const Content = ({ data }) => {
             <Fragment>
                 <Abouttext data ={data.aboutUs}/>
                 <Serviceblock data ={data.services}/>
-                <Framework />
+                <Framework data ={data.framework}/>
                 {/* <Counter />
                 <Blogpost /> */}
             </Fragment>

@@ -43,5 +43,23 @@ services:
     title: DATA SECURITY
     description: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
+framework:
+  title: FRAMEWORK
+  heading: WE ARE BRINGING FROM FARM FOR YOU.
+  description: >
+    Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
+  frameworkbanner: /img/framework.jpg
+  framework1:
+    icon: fab fa-python
+    title: Python
+  framework2:
+    icon: fab fa-wordpress
+    title: Wordpress
+  framework3:
+    icon: fab fa-html5
+    title: HTML5
+  framework4:
+    icon: fab fa-java
+    title: Java
 
 ---

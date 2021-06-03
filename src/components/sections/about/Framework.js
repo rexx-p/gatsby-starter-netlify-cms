@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Tab, Nav } from 'react-bootstrap'
 import frameworktabs from '../../../data/frameworktabs.json';
 
-class Framework extends Component {
-    render() {
+function Framework({data}){
         return (
             <section className="framework-section padding-bottom-extra">
                 <div className="container">
@@ -16,27 +15,27 @@ class Framework extends Component {
                         <div className="col-lg-6 col-md-10">
                             <div className="framework-text pl-20">
                                 <div className="section-title left-border mb-40">
-                                    <span className="title-tag">framework</span>
-                                    <h2>We are bringing from farm for you.</h2>
+                                    <span className="title-tag">{data.title}</span>
+                                    <h2>{data.heading}</h2>
                                 </div>
                                 <Tab.Container defaultActiveKey="tab0">
                                     <Tab.Content>
-                                        {frameworktabs.map((item, i) => (
+                                        {Object.keys(data).slice(2,3).map((item, i) => (
                                             <Tab.Pane key={i} eventKey={"tab" + i}>
                                                 <p>
-                                                    {item.content}
+                                                    {data[item].description}
                                                 </p>
                                             </Tab.Pane>
                                         ))}
                                     </Tab.Content>
                                     <Nav variant="tabs" className="framework-list nav nav-pills mt-25">
-                                        {frameworktabs.map((item, i) => (
+                                        {Object.keys(data).slice(3,7).map((item, i) => (
                                             <Nav.Item key={i}>
                                                 <Nav.Link eventKey={"tab" + i}>
                                                     <span className="icon">
-                                                        <i className={item.icon}></i>
+                                                        <i className={data[item].icon}></i>
                                                     </span>
-                                                    {item.title}
+                                                    {data[item].title}
                                                 </Nav.Link>
                                             </Nav.Item>
                                         ))}
@@ -48,7 +47,6 @@ class Framework extends Component {
                 </div>
             </section>
         );
-    }
 }
 
 export default Framework;
