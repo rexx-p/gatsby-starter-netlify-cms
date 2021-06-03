@@ -29,5 +29,23 @@ projects:
   description: >
     As a result, most of us need to know how to use computers. Our knowledge of
     computers.
+services:
+  title: SERVICES
+  heading: WHAT WE DO
+  servicecard1:
+    icon: /img/services/icon-1.png
+    title: DATE RESEARCH ANALYSIS
+    description: >
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+  servicecard2:
+    icon: /img/services/icon-2.png
+    title: DATE RESEARCH ANALYSIS
+    description: >
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+  servicecard3:
+    icon: /img/services/icon-3.png
+    title: MAINTAINANCE & DATA SENT
+    description: >
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 quoteImage: /img/cta/cta-img.png
 ---

@@ -54,38 +54,76 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPageQuery {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
+query IndexPageQuery {
+  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    frontmatter {
+      title
+      logo {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+      quoteImage {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+      banner {
+        childImageSharp {
+          fluid(maxWidth: 2048, quality: 100) {
+            src
+          }
+        }
+      }
+      heading
+      subheading
+      aboutUs {
         title
-        logo {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
-        quoteImage {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
-        banner {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              src
-            }
-          }
-        }
+        description
+      }
+      services {
+        title
         heading
-        subheading
-        aboutUs {
+        servicecard1 {
+          Icon {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+          title
+          description
+        }
+        servicecard2 {
+          Icon {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+          title
+          description
+        }
+        servicecard3 {
+          Icon {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
           title
           description
         }
       }
     }
   }
+}
+
 `
