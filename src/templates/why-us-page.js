@@ -60,22 +60,44 @@ query WhyUsPageQuery {
         description
       }
       services {
-      title
-      heading
-      servicecard1{
-				title
-        description
-      }
-      servicecard2{
-				title
-        description
-      }
-      servicecard3{
-				title
-        description
-      }
+        title
+        heading
+        servicecard1 {
+          Icon {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+          title
+          description
+        }
+        servicecard2 {
+          Icon {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+          title
+          description
+        }
+        servicecard3 {
+          Icon {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+          title
+          description
+        }
       }
     }
   }
 }
+
 `
