@@ -154,10 +154,30 @@ query IndexPageQuery {
           description
         }
       }
+      skillset {
+        skillsetbanner {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+				title
+        heading
+        skillset1 {
+					title
+          skillvalue
+        }
+        skillset2 {
+					title
+          skillvalue
+        }
+        skillset3 {
+					title
+          skillvalue
+        }
+      }
     }
   }
 }
-
-
-
 `

@@ -21,7 +21,7 @@ const Content = ( {data} ) => {
                 <Features data={data.whyus}/>
                 {/* <Video/> */}
                 {/* <Team/> */}
-                <Skills/>
+                <Skills data={data.skillset}/>
                 {/* <Portfolio/>
                 <Testimonials/> */}
                 {/* <Blogpost/> */}

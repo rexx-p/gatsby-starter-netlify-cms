@@ -78,4 +78,17 @@ whyus:
     title: HIGH QUALITY SECURITY
     description: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+skillset:
+  skillsetbanner: /img/skill-img.jpg
+  title: SKILLSET
+  heading: CHECK SKILLSET & MANUPULATION
+  skillset1:
+    title: CONSULTING & MARKETING
+    skillvalue: 72%
+  skillset2:
+    title: IT SOLUTION & TRAVELSHOOTING
+    skillvalue: 81%
+  skillset3:
+    title: UIX SOLUTION
+    skillvalue: 45%
 ---
