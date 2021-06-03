@@ -62,6 +62,18 @@ query WhyUsPageQuery {
       services {
       title
       heading
+      servicecard1{
+				title
+        description
+      }
+      servicecard2{
+				title
+        description
+      }
+      servicecard3{
+				title
+        description
+      }
       }
     }
   }

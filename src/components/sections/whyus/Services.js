@@ -7,8 +7,8 @@ function Services({data}){
             <section className="services-secton featured-service pt-100 pb-60">
                 <div className="container">
                     <div className="section-title both-border text-center mb-80">
-                        <span className="title-tag">{data.services.title}</span>
-                        <h2>{data.services.heading}</h2>
+                        <span className="title-tag">Services</span>
+                        <h2>what we do</h2>
                     </div>
                     <div className="services-loop">
                         <div className="row justify-content-center">

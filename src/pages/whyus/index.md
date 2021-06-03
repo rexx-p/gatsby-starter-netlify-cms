@@ -31,4 +31,19 @@ whyUsImage: /img/about/why_choose_us.png
 services:
   title: SERVICES
   heading: WHAT WE DO
+  servicecard1:
+    Icon: /img/services/icon-1.png
+    title: DATE RESEARCH ANALYSIS
+    description: >
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+  servicecard2:
+    Icon: /img/services/icon-2.png
+    title: DATE RESEARCH ANALYSIS
+    description: >
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+  servicecard3:
+    Icon: /img/services/icon-3.png
+    title: MAINTAINANCE & DATA SENT
+    description: >
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 ---
