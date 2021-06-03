@@ -3,13 +3,14 @@ import { Tab, Nav } from 'react-bootstrap'
 import frameworktabs from '../../../data/frameworktabs.json';
 
 function Framework({data}){
+    const banner = data.frameworkbanner && data.frameworkbanner.childImageSharp ? data.frameworkbanner.childImageSharp.fluid.src : data.frameworkbanner;
         return (
             <section className="framework-section padding-bottom-extra">
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-10">
                             <div className="framework-img">
-                                <img src={"/assets/img/framework.jpg"} alt="img" />
+                                <img src={banner} alt="img" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-10">
