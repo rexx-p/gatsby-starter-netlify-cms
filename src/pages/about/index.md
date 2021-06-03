@@ -20,17 +20,24 @@ aboutUs:
   img3: /img/experience-tag.png
   counter1: "80"
   counter2: "80"
-experience:
-  total: 32
-  title: YEARS OF EXPERIENCE
-  description: >
-    As a result, most of us need to know how to use computers. Our knowledge of
-    computers.
-projects:
-  total: 99
-  title: PROJECT DONE TOGETHER
-  description: >
-    As a result, most of us need to know how to use computers. Our knowledge of
-    computers.
-quoteImage: /img/cta/cta-img.png
+services:
+  title: OUR SERVICES
+  heading: SEE WHAT WE DO HERE WITH GOOD PASSIONS
+  servicecard1:
+    title: IT DESIGN
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
+  servicecard2:
+    title: IT MANAGEMENT
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
+  servicecard3:
+    title: IT SECURITY
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
+  servicecard4:
+    title: DATA SECURITY
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
+
 ---

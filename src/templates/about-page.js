@@ -38,7 +38,7 @@ export default AboutPage;
 
 export const aboutPageQuery = graphql`
 query AboutPageTemplate {
-  markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+  markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
     frontmatter {
       title
       logo {
@@ -68,7 +68,28 @@ query AboutPageTemplate {
         title
         description
       }
+      services {
+        title
+        heading
+        servicecard1 {
+          title
+          description
+        }
+        servicecard2 {
+          title
+          description
+        }
+        servicecard3 {
+          title
+          description
+        }
+        servicecard4 {
+          title
+          description
+        }
+      }
     }
   }
 }
+
 `
