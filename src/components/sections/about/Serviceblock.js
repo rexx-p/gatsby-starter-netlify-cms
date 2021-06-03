@@ -22,14 +22,14 @@ function Serviceblock ({data}){
                     </div>
                     <div className="services-loop mt-50">
                         <div className="row justify-content-center">
-                            {data.slice(2, 6).map((item, i) => (
+                            {Object.keys(data).slice(2,6).map((item, i) => (
                                 <div key={i} className="col-lg-3 col-md-4 col-sm-6">
                                     <div className="single-service-two white-bg">
                                         <div className="top-icon">
                                             <i className="fal fa-long-arrow-right" />
                                         </div>
-                                        <h4>{item.title}</h4>
-                                        <p>{item.description}</p>
+                                        <h4>{data[item].title}</h4>
+                                        <p>{data[item].description}</p>
                                         <div className="bottom-icon">
                                             <i className={item.icon} />
                                         </div>

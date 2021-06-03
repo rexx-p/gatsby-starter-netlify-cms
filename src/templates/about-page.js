@@ -72,18 +72,22 @@ query AboutPageTemplate {
         title
         heading
         servicecard1 {
+          icon
           title
           description
         }
         servicecard2 {
+          icon
           title
           description
         }
         servicecard3 {
+          icon
           title
           description
         }
         servicecard4 {
+          icon
           title
           description
         }
@@ -91,5 +95,4 @@ query AboutPageTemplate {
     }
   }
 }
-
 `

@@ -24,18 +24,22 @@ services:
   title: OUR SERVICES
   heading: SEE WHAT WE DO HERE WITH GOOD PASSIONS
   servicecard1:
+    icon: pe-7s-diamond
     title: IT DESIGN
     description: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
   servicecard2:
+    icon: pe-7s-arc
     title: IT MANAGEMENT
     description: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
   servicecard3:
+    icon: pe-7s-refresh-2
     title: IT SECURITY
     description: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
   servicecard4:
+    icon: pe-7s-world
     title: DATA SECURITY
     description: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid.
