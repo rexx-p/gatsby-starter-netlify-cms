@@ -46,20 +46,26 @@ services:
 framework:
   title: FRAMEWORK
   heading: WE ARE BRINGING FROM FARM FOR YOU.
-  description: >
-    Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
   frameworkbanner: /img/framework.jpg
   framework1:
     icon: fab fa-python
     title: Python
+    description: >
+      Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
   framework2:
     icon: fab fa-wordpress
     title: Wordpress
+    description: >
+      Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
   framework3:
     icon: fab fa-html5
     title: HTML5
+    description: >
+      Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
   framework4:
     icon: fab fa-java
     title: Java
+    description: >
+      Over the years, a wide range of developments and innovations in the global IT arena have led to many new IT-enabled devices and services being produced. Moreover, there is need for IT today, not just in urban areas but rural regions as well.
 
 ---

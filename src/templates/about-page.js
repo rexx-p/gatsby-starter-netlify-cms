@@ -95,7 +95,6 @@ query AboutPageTemplate {
       framework {
 				title
         heading
-        description
         frameworkbanner {
         	childImageSharp {
           	fluid {
@@ -106,18 +105,22 @@ query AboutPageTemplate {
         framework1 {
           icon
 					title
+          description
         }
         framework2 {
           icon
 					title
+          description
         }
         framework3 {
           icon
 					title
+          description
         }
         framework4 {
           icon
 					title
+          description
         }
       }
     }

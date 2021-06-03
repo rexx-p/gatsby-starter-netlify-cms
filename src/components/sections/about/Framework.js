@@ -20,7 +20,7 @@ function Framework({data}){
                                 </div>
                                 <Tab.Container defaultActiveKey="tab0">
                                     <Tab.Content>
-                                        {Object.keys(data).slice(2,3).map((item, i) => (
+                                        {Object.keys(data).slice(2,6).map((item, i) => (
                                             <Tab.Pane key={i} eventKey={"tab" + i}>
                                                 <p>
                                                     {data[item].description}
@@ -29,7 +29,7 @@ function Framework({data}){
                                         ))}
                                     </Tab.Content>
                                     <Nav variant="tabs" className="framework-list nav nav-pills mt-25">
-                                        {Object.keys(data).slice(3,7).map((item, i) => (
+                                        {Object.keys(data).slice(2,6).map((item, i) => (
                                             <Nav.Item key={i}>
                                                 <Nav.Link eventKey={"tab" + i}>
                                                     <span className="icon">
