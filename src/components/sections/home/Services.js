@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 const Services = ({data}) => {
     const icon1 = data.servicecard1.icon && data.servicecard1.icon.childImageSharp ? data.servicecard1.icon.childImageSharp.fluid.src : data.servicecard1.icon;
-    const icon2 = data.services.servicecard2.icon && data.servicecard2.icon.childImageSharp ? data.servicecard2.icon.childImageSharp.fluid.src : data.servicecard2.icon;
+    const icon2 = data.servicecard2.icon && data.servicecard2.icon.childImageSharp ? data.servicecard2.icon.childImageSharp.fluid.src : data.servicecard2.icon;
     const icon3 = data.servicecard3.icon && data.servicecard3.icon.childImageSharp ? data.servicecard3.icon.childImageSharp.fluid.src : data.servicecard3.icon;
         return (
             <section className="services-secton pt-120 pb-200">

@@ -47,5 +47,8 @@ services:
     title: MAINTAINANCE & DATA SENT
     description: >
       Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-quoteImage: /img/cta/cta-img.png
+quote: 
+  quoteImage: /img/cta/cta-img.png
+  title: GET A QUOTE
+  heading: WE ARE HERE FOR YOUR ESTIMATE PRICE.
 ---

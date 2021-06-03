@@ -65,13 +65,6 @@ query IndexPageQuery {
           }
         }
       }
-      quoteImage {
-        childImageSharp {
-          fluid {
-            src
-          }
-        }
-      }
       banner {
         childImageSharp {
           fluid(maxWidth: 2048, quality: 100) {
@@ -122,8 +115,20 @@ query IndexPageQuery {
           description
         }
       }
+      quote {
+				quoteImage {
+        	childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+      	}
+        title
+        heading
+      }
     }
   }
 }
+
 
 `
