@@ -116,19 +116,48 @@ query IndexPageQuery {
         }
       }
       quote {
-				quoteImage {
-        	childImageSharp {
-          	fluid {
-            	src
-          	}
-        	}
-      	}
+        quoteImage {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
         title
         heading
+      }
+      whyus {
+        title
+        heading
+        option1 {
+          title
+          description
+        }
+        option2 {
+          title
+          description
+        }
+        option3 {
+          title
+          description
+        }
+        option4 {
+          title
+          description
+        }
+        option5 {
+          title
+          description
+        }
+        option6 {
+          title
+          description
+        }
       }
     }
   }
 }
+
 
 
 `

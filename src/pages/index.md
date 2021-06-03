@@ -51,4 +51,31 @@ quote:
   quoteImage: /img/cta/cta-img.png
   title: GET A QUOTE
   heading: WE ARE HERE FOR YOUR ESTIMATE PRICE.
+whyus:
+  title: WHY US
+  heading: WHY CHOOSE US
+  option1: 
+    title: UNLIMITED LAYOUT
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+  option2: 
+    title: EASY TO CUSTOMIZE
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+  option3: 
+    title: 24/7 ONLINE SUPPORT
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+  option4: 
+    title: RETINA READY WORK
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+  option5: 
+    title: GLOBAL LANGUAGE
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+  option6: 
+    title: HIGH QUALITY SECURITY
+    description: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 ---

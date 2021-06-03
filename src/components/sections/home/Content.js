@@ -18,7 +18,7 @@ const Content = ( {data} ) => {
                 <Abouttext/>
                 <Services data={data.services}/>
                 <Cta data={data.quote}/>
-                <Features/>
+                <Features data={data.whyus}/>
                 {/* <Video/> */}
                 {/* <Team/> */}
                 <Skills/>
