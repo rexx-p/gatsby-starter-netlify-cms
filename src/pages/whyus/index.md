@@ -13,9 +13,6 @@ aboutUs:
     IT arena have led to many new IT-enabled devices and services being
     produced. Moreover, there is need for IT today, not just in urban areas but
     rural regions as well.
-  img1: /img/tile-gallery/03.jpg
-  img2: /img/tile-gallery/01.jpg
-  img3: /img/tile-gallery/02.jpg
   counter1: "80"
   counter2: "80"
 experience:
@@ -31,4 +28,7 @@ projects:
     As a result, most of us need to know how to use computers. Our knowledge of
     computers.
 whyUsImage: /img/about/why_choose_us.png
+services:
+  title: SERVICES
+  heading: WHAT WE DO
 ---

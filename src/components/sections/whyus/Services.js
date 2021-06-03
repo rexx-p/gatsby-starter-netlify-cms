@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from "gatsby";
 
-class Services extends Component {
-    render() {
+
+function Services({data}){
         return (
             <section className="services-secton featured-service pt-100 pb-60">
                 <div className="container">
                     <div className="section-title both-border text-center mb-80">
-                        <span className="title-tag">services</span>
-                        <h2>what we do</h2>
+                        <span className="title-tag">{data.services.title}</span>
+                        <h2>{data.services.heading}</h2>
                     </div>
                     <div className="services-loop">
                         <div className="row justify-content-center">
@@ -50,7 +50,6 @@ class Services extends Component {
                 </div>
             </section>
         );
-    }
 }
 
 export default Services;

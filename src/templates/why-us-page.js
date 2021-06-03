@@ -28,38 +28,42 @@ const Whyus = ( {data} ) => {
 export default Whyus;
 
 export const pageQuery = graphql`
-  query WhyUsPageQuery {
-    markdownRemark(frontmatter: { templateKey: { eq: "why-us-page" } }) {
-      frontmatter {
+query WhyUsPageQuery {
+  markdownRemark(frontmatter: {templateKey: {eq: "why-us-page"}}) {
+    frontmatter {
+      title
+      logo {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+      quoteImage {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+      banner {
+        childImageSharp {
+          fluid(maxWidth: 2048, quality: 100) {
+            src
+          }
+        }
+      }
+      heading
+      subheading
+      aboutUs {
         title
-        logo {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
-        quoteImage {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
-        banner {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              src
-            }
-          }
-        }
-        heading
-        subheading
-        aboutUs {
-          title
-          description
-        }
+        description
+      }
+      services {
+      title
+      heading
       }
     }
   }
+}
 `
