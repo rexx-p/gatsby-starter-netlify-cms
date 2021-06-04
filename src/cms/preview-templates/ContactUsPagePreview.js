@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import  IndexPageTemplate from '../../templates/contact-us-page'
+import ContactPage from '../../templates/contact-us-page'
 
 const ContactPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <IndexPageTemplate
+      <ContactPage
         data={data}
       />
     )

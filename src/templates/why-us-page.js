@@ -20,7 +20,7 @@ const Whyus = ( {data} ) => {
                 <Header data={data}/>
                 <Breadcrumbs breadcrumb={{ pagename: data.heading }} data={data}/>
                 <Content data={data}/>
-                <Footer footer={{ style:"footer-style-three", logo:"assets/img/logo.png" }}/>
+                <Footer footer={{ style:"", logo:"assets/img/logo.png" }}/>
             </Fragment>
         );
 }
