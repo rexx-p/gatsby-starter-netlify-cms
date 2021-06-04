@@ -1,21 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import  IndexPageTemplate  from '../../templates/about-page'
+import  AboutPageTemplate  from '../../templates/about-page'
 
-const IndexPagePreview = ({ entry, getAsset }) => {
+const AboutPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <IndexPageTemplate
+      <AboutPageTemplate
         data={data}
-        image={getAsset(data.image)}
-        title={data.title}
-        heading={data.heading}
-        subheading={data.subheading}
-        description={data.description}
-        intro={data.intro || { blurbs: [] }}
-        aboutUs={data.aboutUs || {}}
       />
     )
   } else {
@@ -23,11 +16,11 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   }
 }
 
-IndexPagePreview.propTypes = {
+AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default IndexPagePreview
+export default AboutPagePreview
