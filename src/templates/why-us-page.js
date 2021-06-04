@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, {  Fragment } from 'react';
 import MetaTags from "react-meta-tags";
 import Header from '../components/layouts/Header';
 import Breadcrumbs from '../components/layouts/Breadcrumbs';
 import Footer from '../components/layouts/Footer';
 import Content from '../components/sections/whyus/Content';
-
+import { graphql } from 'gatsby'
 const pagelocation = 'Why Choose Us'
 
 const Whyus = ( {data} ) => {
