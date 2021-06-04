@@ -12,9 +12,9 @@ aboutUs:
     IT arena have led to many new IT-enabled devices and services being
     produced. Moreover, there is need for IT today, not just in urban areas but
     rural regions as well.
-  img1: /img/tile-gallery/03.jpg
-  img2: /img/tile-gallery/01.jpg
-  img3: /img/tile-gallery/02.jpg
+  img1: /img/tile-gallery/01.jpg
+  img2: /img/tile-gallery/02.jpg
+  img3: /img/tile-gallery/03.jpg
   experience:
     total: 32
     title: YEARS OF EXPERIENCE

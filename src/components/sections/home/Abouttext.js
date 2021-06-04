@@ -5,15 +5,18 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 function Abouttext({data}) {
     const [focus, setFocus] = React.useState(false);
+    const img1 = data.img1 && data.img1.childImageSharp ? data.img1.childImageSharp.fluid.src : data.img1;
+    const img2 = data.img2 && data.img2.childImageSharp ? data.img2.childImageSharp.fluid.src : data.img2;
+    const img3 = data.img3 && data.img3.childImageSharp ? data.img3.childImageSharp.fluid.src : data.img3;
     return (
         <section className="about-section pt-120 pb-120">
             <div className="container">
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-10">
                         <div className="about-tile-gallery">
-                            <img src={"/assets/img/tile-gallery/01.jpg"} alt="img" className="image-one" />
-                            <img src={"/assets/img/tile-gallery/02.jpg"} alt="img" className="image-two" />
-                            <img src={"/assets/img/tile-gallery/03.jpg"} alt="img" className="image-three" />
+                            <img src={img1} alt="img" className="image-one" />
+                            <img src={img2} alt="img" className="image-two" />
+                            <img src={img3} alt="img" className="image-three" />
                             <img src={"/assets/img/tile-gallery/icon.png"} alt="icon" className="icon" />
                             <img src={"/assets/img/tile-gallery/icon-2.png"} alt="icon" className="zero-icon" />
                         </div>
@@ -30,7 +33,7 @@ function Abouttext({data}) {
                                     <div className="progressbar-sec">
                                         <VisibilitySensor>
                                             {({ isVisible }) => {
-                                                const percentage = isVisible ? 32 : 0;
+                                                const percentage = isVisible ? data.experience.total : 0;
                                                 return (
                                                     <CircularProgressbar className="chart"
                                                         value={percentage}
@@ -48,7 +51,7 @@ function Abouttext({data}) {
                                     </div>
                                     <div className="counter-box">
                                         <span className="timer">
-                                            <CountUp start={focus ? 0 : null} end={32} duration={5} redraw={true}>
+                                            <CountUp start={focus ? 0 : null} end={data.experience.total} duration={5} redraw={true}>
                                                 {({ countUpRef }) => (
                                                     <Fragment>
                                                         <span ref={countUpRef} />
@@ -75,7 +78,7 @@ function Abouttext({data}) {
                                     <div className="progressbar-sec">
                                         <VisibilitySensor>
                                             {({ isVisible }) => {
-                                                const percentage = isVisible ? 99 : 0;
+                                                const percentage = isVisible ? data.projects.total : 0;
                                                 return (
                                                     <CircularProgressbar className="chart"
                                                         value={percentage}
@@ -93,7 +96,7 @@ function Abouttext({data}) {
                                     </div>
                                     <div className="counter-box">
                                         <span className="timer">
-                                            <CountUp start={focus ? 0 : null} end={99} duration={5} redraw={true}>
+                                            <CountUp start={focus ? 0 : null} end={data.projects.total} duration={5} redraw={true}>
                                                 {({ countUpRef }) => (
                                                     <Fragment>
                                                         <span ref={countUpRef} />
