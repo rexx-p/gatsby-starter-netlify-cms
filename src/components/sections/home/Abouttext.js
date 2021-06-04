@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
-function Abouttext(props) {
+function Abouttext({data}) {
     const [focus, setFocus] = React.useState(false);
     return (
         <section className="about-section pt-120 pb-120">
@@ -22,13 +22,9 @@ function Abouttext(props) {
                         <div className="about-text pl-25">
                             <div className="section-title mb-40 left-border">
                                 <span className="title-tag">About us</span>
-                                <h2>Onitir help businesses elevate their value.</h2>
+                                <h2>{data.title}</h2>
                             </div>
-                            <p>
-                                Over the years, a wide range of developments and innovations in the global IT arena have led
-                                to many new IT-enabled devices and services being produced. Moreover, there is need for IT
-                                today, not just in urban areas but rural regions as well.
-          </p>
+                            <p>{data.description}</p>
                             <div className="about-features mt-50">
                                 <div className="sngle-features">
                                     <div className="progressbar-sec">
@@ -71,9 +67,8 @@ function Abouttext(props) {
                                         </span>
                                     </div>
                                     <div className="desc">
-                                        <h4>Years of Experience</h4>
-                                        <p>As a result, most of us need to know how to use computers. Our knowledge of
-                  computers.</p>
+                                        <h4>{data.experience.title}</h4>
+                                        <p>{data.experience.description}</p>
                                     </div>
                                 </div>
                                 <div className="sngle-features">
@@ -117,9 +112,8 @@ function Abouttext(props) {
                                         </span>
                                     </div>
                                     <div className="desc">
-                                        <h4>Project Done together</h4>
-                                        <p>As a result, most of us need to know how to use computers. Our knowledge of
-                  computers.</p>
+                                        <h4>{data.projects.title}</h4>
+                                        <p>{data.projects.description}</p>
                                     </div>
                                 </div>
                             </div>

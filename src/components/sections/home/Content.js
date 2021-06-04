@@ -15,7 +15,7 @@ const Content = ( {data} ) => {
         return (
             <Fragment>
                 <Banner data={data}/>
-                <Abouttext/>
+                <Abouttext data={data.aboutUs}/>
                 <Services data={data.services}/>
                 <Cta data={data.quote}/>
                 <Features data={data.whyus}/>

@@ -77,6 +77,37 @@ query IndexPageQuery {
       aboutUs {
         title
         description
+        img1 {
+        	childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+      	}
+        img2 {
+        	childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+      	}
+        img3 {
+        	childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+      	}
+        experience {
+					total
+          title
+          description          
+        }
+        projects {
+					total
+          title
+          description
+        }
       }
       services {
         title
@@ -180,4 +211,5 @@ query IndexPageQuery {
     }
   }
 }
+
 `

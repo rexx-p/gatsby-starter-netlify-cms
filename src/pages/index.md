@@ -15,20 +15,18 @@ aboutUs:
   img1: /img/tile-gallery/03.jpg
   img2: /img/tile-gallery/01.jpg
   img3: /img/tile-gallery/02.jpg
-  counter1: "80"
-  counter2: "80"
-experience:
-  total: 32
-  title: YEARS OF EXPERIENCE
-  description: >
-    As a result, most of us need to know how to use computers. Our knowledge of
-    computers.
-projects:
-  total: 99
-  title: PROJECT DONE TOGETHER
-  description: >
-    As a result, most of us need to know how to use computers. Our knowledge of
-    computers.
+  experience:
+    total: 32
+    title: YEARS OF EXPERIENCE
+    description: >
+      As a result, most of us need to know how to use computers. Our knowledge of
+      computers.
+  projects:
+    total: 99
+    title: PROJECT DONE TOGETHER
+    description: >
+      As a result, most of us need to know how to use computers. Our knowledge of
+      computers.
 services:
   title: SERVICES
   heading: WHAT WE DO
