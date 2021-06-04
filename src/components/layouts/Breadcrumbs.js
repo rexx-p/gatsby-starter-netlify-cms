@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 class Breadcrumbs extends Component {
     
     render() {
-        const imageSrc = this.props.data.banner.childImageSharp ? this.props.data.banner.childImageSharp.fluid.src : this.props.data.banner;
+        const imageSrc = this.props.data.banner && this.props.data.banner.childImageSharp ? this.props.data.banner.childImageSharp.fluid.src : this.props.data.banner;
         return (
             <section className="breadcrumb-section" style={{ backgroundImage: `url(${imageSrc})` }}>
                 <div className="container">
