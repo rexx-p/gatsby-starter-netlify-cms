@@ -13,7 +13,7 @@ import '../assets/css/default.css';
 import '../assets/css/style.css';
 import '../index.css';
 
-const AboutPage = ({ data }) => {
+export const AboutPageTemplate = ({ data }) => {
   debugger;
   const aboutPageData = data;
   const pagelocation = data.heading;
@@ -34,6 +34,15 @@ const AboutPage = ({ data }) => {
   );
 }
 
+const AboutPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+
+  return (
+    <AboutPageTemplate
+      data={frontmatter}
+    />
+  )
+}
 export default AboutPage;
 
 export const aboutPageQuery = graphql`
