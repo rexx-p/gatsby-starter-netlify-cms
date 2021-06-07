@@ -68,7 +68,4 @@ collections:
           - {label: Banner, name: banner, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: AboutUs, name: aboutUs, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Img1, name: img1, widget: image},{label: Img2, name: img2, widget: image},{label: Img3, name: img3, widget: image}]}
-          - {label: Experience, name: experience, widget: object, fields: [{label: Total, name: total, widget: string},{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Projects, name: projects, widget: object, fields: [{label: Total, name: total, widget: string},{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: QuoteImage, name: quoteImage, widget: image}
+          - {label: Contact Details, name: contactdetails, widget: object, fields: [{label: Address, name: address, widget: object, fields: [{label: Title, name: title, widget: string},{label: Address, name: address, widget: text}]}, {label: Phone Number, name: phonenumber, widget: object, fields: [{label: Number 1, name: number1, widget: string},{label: Number 2, name: number2, widget: string}]}, {label: Email Address, name: email, widget: object, fields: [{label: Email ID 1, name: emailid1, widget: string},{label: Email ID 2, name: emailid2, widget: string}]}]}
