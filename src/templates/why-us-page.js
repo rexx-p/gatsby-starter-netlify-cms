@@ -63,7 +63,7 @@ query WhyUsPageQuery {
         title
         heading
         servicecard1 {
-          Icon {
+          icon {
             childImageSharp {
               fluid {
                 src
@@ -74,7 +74,7 @@ query WhyUsPageQuery {
           description
         }
         servicecard2 {
-          Icon {
+          icon {
             childImageSharp {
               fluid {
                 src
@@ -85,7 +85,7 @@ query WhyUsPageQuery {
           description
         }
         servicecard3 {
-          Icon {
+          icon {
             childImageSharp {
               fluid {
                 src
@@ -99,5 +99,6 @@ query WhyUsPageQuery {
     }
   }
 }
+
 
 `
