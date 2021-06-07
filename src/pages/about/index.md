@@ -18,8 +18,6 @@ aboutUs:
   img1: /img/tile-gallery/04.jpg
   img2: /img/tile-gallery/05.jpg
   img3: /img/experience-tag.png
-  counter1: "80"
-  counter2: "80"
 services:
   title: OUR SERVICES
   heading: SEE WHAT WE DO HERE WITH GOOD PASSIONS
