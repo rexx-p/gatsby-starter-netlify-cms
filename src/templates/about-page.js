@@ -75,7 +75,30 @@ query AboutPageTemplate {
       subheading
       aboutUs {
         title
+        heading
         description
+        extra
+        img1 {
+					childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+        }
+        img2 {
+					childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+        }
+        img3 {
+					childImageSharp {
+          	fluid {
+            	src
+          	}
+        	}
+        }
       }
       services {
         title

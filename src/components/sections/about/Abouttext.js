@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 const Abouttext = ({ data }) => {
+    console.log(data)
     const img1 = data.img1 && data.img1.childImageSharp ? data.img1.childImageSharp.fluid.src : data.img1;
     const img2 = data.img2 && data.img2.childImageSharp ? data.img2.childImageSharp.fluid.src : data.img2;
     const img3 = data.img3 && data.img3.childImageSharp ? data.img3.childImageSharp.fluid.src : data.img3;
+    console.log(img1,img2,img3)
     
     return (
         <section className="about-section about-style-three pt-120 pb-120">
