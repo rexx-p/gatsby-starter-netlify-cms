@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
-function Abouttext({data}) {
+function Abouttext({ data }) {
     const [focus, setFocus] = React.useState(false);
     const whyUsImage = data.whyUsImage && data.whyUsImage.childImageSharp ? data.whyUsImage.childImageSharp.fluid.src : data.whyUsImage;
 
@@ -20,7 +20,7 @@ function Abouttext({data}) {
                                 </div>
                                 <p>{data.aboutUs.description}</p>
                                 <div className="about-features mt-50">
-                                    <div className="sngle-features">
+                                    {data.experience && <div className="sngle-features">
                                         <div className="progressbar-sec">
                                             <VisibilitySensor>
                                                 {({ isVisible }) => {
@@ -64,8 +64,8 @@ function Abouttext({data}) {
                                             <h4>{data.experience.title}</h4>
                                             <p>{data.experience.description}</p>
                                         </div>
-                                    </div>
-                                    <div className="sngle-features">
+                                    </div>}
+                                    { data.projects && <div className="sngle-features">
                                         <div className="progressbar-sec">
                                             <VisibilitySensor>
                                                 {({ isVisible }) => {
@@ -85,7 +85,7 @@ function Abouttext({data}) {
 
                                             <span className="icon"><i className="fas fa-globe" /></span>
                                         </div>
-                                        <div className="counter-box">
+                                       <div className="counter-box">
                                             <span className="timer">
                                                 <CountUp start={focus ? 0 : null} end={data.projects.total} duration={5} redraw={true}>
                                                     {({ countUpRef }) => (
@@ -107,9 +107,9 @@ function Abouttext({data}) {
                                         </div>
                                         <div className="desc">
                                             <h4>{data.projects.title}</h4>
-                                            <p>{ data.projects.description}</p>
+                                            <p>{data.projects.description}</p>
                                         </div>
-                                    </div>
+                                    </div>}
                                 </div>
                             </div>
                         </div>

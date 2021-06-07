@@ -7,7 +7,7 @@ import Content from '../components/sections/whyus/Content';
 import { graphql } from 'gatsby'
 const pagelocation = 'Why Choose Us'
 
-const Whyus = ( {data} ) => {
+export const WhyUsTemplate = ( {data} ) => {
         return (
             <Fragment>
                 <MetaTags>
@@ -25,7 +25,17 @@ const Whyus = ( {data} ) => {
         );
 }
 
-export default Whyus;
+const WhyUsPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+
+  return (
+    <WhyUsTemplate
+      data={frontmatter}
+    />
+  )
+}
+
+export default WhyUsPage
 
 export const pageQuery = graphql`
 query WhyUsPageQuery {
@@ -58,6 +68,16 @@ query WhyUsPageQuery {
       aboutUs {
         title
         description
+        experience {
+          total
+          title
+          description
+        }
+        projects {
+          total
+          title
+          description
+        }
       }
       services {
         title
