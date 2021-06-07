@@ -56,13 +56,6 @@ query AboutPageTemplate {
           }
         }
       }
-      quoteImage {
-        childImageSharp {
-          fluid {
-            src
-          }
-        }
-      }
       banner {
         childImageSharp {
           fluid(maxWidth: 2048, quality: 100) {
