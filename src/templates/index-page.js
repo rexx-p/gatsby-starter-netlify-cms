@@ -78,33 +78,33 @@ query IndexPageQuery {
         title
         description
         img1 {
-        	childImageSharp {
-          	fluid {
-            	src
-          	}
-        	}
-      	}
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
         img2 {
-        	childImageSharp {
-          	fluid {
-            	src
-          	}
-        	}
-      	}
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
         img3 {
-        	childImageSharp {
-          	fluid {
-            	src
-          	}
-        	}
-      	}
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
         experience {
-					total
+          total
           title
-          description          
+          description
         }
         projects {
-					total
+          total
           title
           description
         }
@@ -113,7 +113,7 @@ query IndexPageQuery {
         title
         heading
         servicecard1 {
-          Icon {
+          icon {
             childImageSharp {
               fluid {
                 src
@@ -124,7 +124,7 @@ query IndexPageQuery {
           description
         }
         servicecard2 {
-          Icon {
+          icon {
             childImageSharp {
               fluid {
                 src
@@ -135,7 +135,7 @@ query IndexPageQuery {
           description
         }
         servicecard3 {
-          Icon {
+          icon {
             childImageSharp {
               fluid {
                 src
@@ -193,23 +193,22 @@ query IndexPageQuery {
             }
           }
         }
-				title
+        title
         heading
         skillset1 {
-					title
+          title
           skillvalue
         }
         skillset2 {
-					title
+          title
           skillvalue
         }
         skillset3 {
-					title
+          title
           skillvalue
         }
       }
     }
   }
 }
-
 `
