@@ -4,6 +4,7 @@ import Header from '../components/layouts/Headerthree';
 import Breadcrumbs from '../components/layouts/Breadcrumbs';
 import Footer from '../components/layouts/Footer';
 import Content from '../components/sections/contact/Content';
+import { graphql } from 'gatsby';
 
 
 export const ContactUsTemplate = ({ data }) => {
