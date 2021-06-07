@@ -15,8 +15,8 @@ class Content extends Contactform {
                                             <i className="pe-7s-home" />
                                         </div>
                                         <div className="content">
-                                            <h4>Office Address</h4>
-                                            <p>19/A, Cirikon City hall Tower <br /> New York, NYC</p>
+                                            <h4>{this.props.data.contactdetails.addressdetails.title}</h4>
+                                            <p>{this.props.data.contactdetails.addressdetails.address}</p>
                                         </div>
                                     </div>
                                     <div className="info-box">
@@ -25,7 +25,7 @@ class Content extends Contactform {
                                         </div>
                                         <div className="content">
                                             <h4>Phone Number</h4>
-                                            <p>+987 876 7765 76 519 <br /> 987 (876) 76 78 89 9</p>
+                                            <p>{this.props.data.contactdetails.phonenumber.number1}<br /> {this.props.data.contactdetails.phonenumber.number2}</p>
                                         </div>
                                     </div>
                                     <div className="info-box">
@@ -34,7 +34,7 @@ class Content extends Contactform {
                                         </div>
                                         <div className="content">
                                             <h4>Email address</h4>
-                                            <p>info@example.com <br /> jobs.example@example.com</p>
+                                            <p>{this.props.data.contactdetails.email.emailid1}<br />{this.props.data.contactdetails.email.emailid2}</p>
                                         </div>
                                     </div>
                                 </div>
