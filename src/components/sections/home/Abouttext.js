@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import icon from '../../../assets/img/tile-gallery/icon.png'
+import icon2 from '../../../assets/img/tile-gallery/icon-2.png'
 
 function Abouttext({data}) {
     const [focus, setFocus] = React.useState(false);
@@ -17,8 +19,8 @@ function Abouttext({data}) {
                             <img src={img1} alt="img" className="image-one" />
                             <img src={img2} alt="img" className="image-two" />
                             <img src={img3} alt="img" className="image-three" />
-                            <img src={"/assets/img/tile-gallery/icon.png"} alt="icon" className="icon" />
-                            <img src={"/assets/img/tile-gallery/icon-2.png"} alt="icon" className="zero-icon" />
+                            <img src={icon} alt="icon" className="icon" />
+                            <img src={icon2} alt="icon" className="zero-icon" />
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-10">
