@@ -8,7 +8,6 @@ import { graphql } from 'gatsby'
 const pagelocation = 'Why Choose Us'
 
 export const WhyUsTemplate = ( {data} ) => {
-  console.log(data)
         return (
             <Fragment>
                 <MetaTags>

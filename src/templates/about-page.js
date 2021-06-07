@@ -14,7 +14,6 @@ import '../assets/css/style.css';
 import '../index.css';
 
 export const AboutPageTemplate = ({ data }) => {
-  debugger;
   const aboutPageData = data;
   const pagelocation = data.heading;
   return (
