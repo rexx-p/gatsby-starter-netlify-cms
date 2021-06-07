@@ -19,7 +19,7 @@ export const ContactUsTemplate = ({ data }) => {
                     content="#"
                 />
             </MetaTags>
-            <Header />
+            <Header data={data}/>
             <Breadcrumbs breadcrumb={{ pagename: pagelocation }} data={data}/>
             <Content data= {data}/>
             <Footer footer={{ style: "footer-style-three", logo: "assets/img/logo.png" }} />

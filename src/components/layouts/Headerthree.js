@@ -8,6 +8,7 @@ import Mobilemenu from './Mobilemenu';
 
 class Headerthree extends HeaderComponent {
     render() {
+        const imageSrc=this.props.data.logo.childImageSharp ? this.props.data.logo.childImageSharp.fluid.src : this.props.data.logo;
         const stickyheader = this.state.isTop ? 'sticky' : '';
         return (
             <header className={"header-absolute header-three sticky-header " + stickyheader} id="can-sticky">
@@ -17,7 +18,7 @@ class Headerthree extends HeaderComponent {
                             <nav className="main-menu">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src={"/assets/img/logo-white.png"} alt="logo" className="normal-logo" />
+                                        <img src={imageSrc} alt="logo" className="normal-logo" />
                                         <img src={"/assets/img/logo.png"} alt="logo" className="sticky-logo" />
                                     </Link>
                                 </div>
