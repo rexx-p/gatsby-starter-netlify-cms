@@ -93,33 +93,33 @@ query AboutPageTemplate {
         }
       }
       framework {
-				title
+        title
         heading
         frameworkbanner {
-        	childImageSharp {
-          	fluid {
-            	src
-          	}
-        	}
-      	}
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
         framework1 {
           icon
-					title
+          title
           description
         }
         framework2 {
           icon
-					title
+          title
           description
         }
         framework3 {
           icon
-					title
+          title
           description
         }
         framework4 {
           icon
-					title
+          title
           description
         }
       }
