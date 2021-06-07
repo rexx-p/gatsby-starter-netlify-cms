@@ -49,9 +49,9 @@ query WhyUsPageQuery {
           }
         }
       }
-      quoteImage {
-        childImageSharp {
-          fluid {
+      whyUsImage {
+				childImageSharp {
+					fluid {
             src
           }
         }
@@ -68,16 +68,16 @@ query WhyUsPageQuery {
       aboutUs {
         title
         description
-        experience {
-          total
-          title
-          description
-        }
-        projects {
-          total
-          title
-          description
-        }
+      }
+      experience {
+        total
+        title
+        description
+      }
+      projects {
+        total
+        title
+        description
       }
       services {
         title
@@ -119,6 +119,4 @@ query WhyUsPageQuery {
     }
   }
 }
-
-
 `

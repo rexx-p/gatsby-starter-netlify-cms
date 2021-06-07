@@ -13,8 +13,6 @@ aboutUs:
     IT arena have led to many new IT-enabled devices and services being
     produced. Moreover, there is need for IT today, not just in urban areas but
     rural regions as well.
-  counter1: "80"
-  counter2: "80"
 experience:
   total: 32
   title: YEARS OF EXPERIENCE
