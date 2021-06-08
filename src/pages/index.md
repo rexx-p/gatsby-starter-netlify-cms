@@ -3,7 +3,7 @@ templateKey: index-page
 title: Onitir - DC WebTech
 logo: /img/logo.png
 banner: /img/flavor_wheel.jpg
-heading: We Create Perfect Brand Good Values
+heading: We Create Perfect Brand Good Behaviour
 subheading: Bring your ideas to life with us
 aboutUs:
   title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
@@ -19,14 +19,14 @@ aboutUs:
     total: 32
     title: YEARS OF EXPERIENCE
     description: >
-      As a result, most of us need to know how to use computers. Our knowledge of
-      computers.
+      As a result, most of us need to know how to use computers. Our knowledge
+      of computers.
   projects:
     total: 99
     title: PROJECT DONE TOGETHER
     description: >
-      As a result, most of us need to know how to use computers. Our knowledge of
-      computers.
+      As a result, most of us need to know how to use computers. Our knowledge
+      of computers.
 services:
   title: SERVICES
   heading: WHAT WE DO
@@ -34,47 +34,50 @@ services:
     icon: /img/services/icon-1.png
     title: DATE RESEARCH ANALYSIS
     description: >
-      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore.
   servicecard2:
     icon: /img/services/icon-2.png
     title: DATE RESEARCH ANALYSIS
     description: >
-      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore.
   servicecard3:
     icon: /img/services/icon-3.png
     title: MAINTAINANCE & DATA SENT
     description: >
-      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-quote: 
+      Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore.
+quote:
   quoteImage: /img/cta/cta-img.png
   title: GET A QUOTE
   heading: WE ARE HERE FOR YOUR ESTIMATE PRICE.
 whyus:
   title: WHY US
   heading: WHY CHOOSE US
-  option1: 
+  option1:
     title: UNLIMITED LAYOUT
-    description: >
+    description: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-  option2: 
+  option2:
     title: EASY TO CUSTOMIZE
-    description: >
+    description: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-  option3: 
+  option3:
     title: 24/7 ONLINE SUPPORT
-    description: >
+    description: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-  option4: 
+  option4:
     title: RETINA READY WORK
-    description: >
+    description: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-  option5: 
+  option5:
     title: GLOBAL LANGUAGE
-    description: >
+    description: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-  option6: 
+  option6:
     title: HIGH QUALITY SECURITY
-    description: >
+    description: |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 skillset:
   skillsetbanner: /img/skill-img.jpg
