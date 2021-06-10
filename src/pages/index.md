@@ -3,7 +3,7 @@ templateKey: index-page
 title: Onitir - DC WebTech
 logo: /img/logo.png
 banner: /img/flavor_wheel.jpg
-heading: We Create Perfect Brand Good Behaviour
+heading: sample Heading
 subheading: Bring your ideas to life with us
 aboutUs:
   title: ONITIR HELP BUSINESSES ELEVATE THEIR VALUE.
